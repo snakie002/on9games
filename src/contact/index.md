@@ -37,4 +37,4 @@ Blog: [on9.games](https://on9.games)
 讀者及觀眾朋友們可以到以下連結以表對頻道及遊戲產業的支持，每一篇文章影片都出自無私的作者們筆下，
 希望觀眾朋友們能夠對內容制作者實際支持，謝謝你！
 
-[![Donation](Panel_Donations2.png)](https://streamlabs.com/snakie002/tip)
+![https://streamlabs.com/snakie002/tip](post_assets/Panel_Donations2.png)
