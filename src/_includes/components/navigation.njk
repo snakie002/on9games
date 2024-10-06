@@ -1,0 +1,27 @@
+<!-- Navigation -->
+<div class="join mt-4 mx-auto">
+    {%- set currentPage = page.url | currentPage %}
+    {%- set nextPage = "/page/" + (currentPage * 1 + 1) %}
+    {%- set previousPage = '/' if currentPage === "2" else "/page/" + (currentPage - 1) %}
+    {% if currentPage > 1 and pagination.hrefs.length > 1 %}
+        <a class="join-item btn btn-primary" href="{{ previousPage }}">上一頁</a>
+    {% endif %}
+    {%- for href in (pagination.hrefs | indexNav) %}
+        {%- if loop.index0 > 1 and currentPage - loop.index === 1 %}
+            <a class="join-item btn bg-base-100">...</a>
+        {% endif %}
+        {%- if currentPage == href.page %}
+            <a class="join-item btn btn-primary" href="{{ href.url }}">{{ href.page }}</a>
+        {%- elseif currentPage - loop.index === 1 or loop.index - currentPage === 1 %}
+            <a class="join-item btn bg-base-100" href="{{ href.url }}">{{ href.page }}</a>
+        {%- elseif loop.index0 === 0 or loop.index === pagination.hrefs.length %}
+            <a class="join-item btn bg-base-100" href="{{ href.url }}">{{ href.page }}</a>
+        {% endif %}
+        {%- if loop.index < pagination.hrefs.length and loop.index - currentPage === 1 %}
+            <a class="join-item btn bg-base-100">...</a>
+        {% endif %}
+    {% endfor %}
+    {% if currentPage < pagination.hrefs.length and pagination.hrefs.length > 1 %}
+        <a class="join-item btn btn-primary" href="{{ nextPage }}">下一頁</a>
+    {% endif %}
+</div>

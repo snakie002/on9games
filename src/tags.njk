@@ -1,0 +1,22 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - post
+    - posts
+    - tagList
+    - recentPosts
+    - categories
+  addAllPagesToCollections: true
+layout: layouts/home.njk
+eleventyComputed:
+  title: Tagged “{{ tag }}”
+permalink: /tags/{{ tag }}/
+---
+
+{% set postslistTitle = "標籤: " + tag %}
+{% set postslist = collections[ tag ] %}
+{% include "./_includes/components/postslist.njk" %}

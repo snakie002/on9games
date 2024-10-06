@@ -1,0 +1,12 @@
+<div class="join">
+    {% for category in post.data.categories %}
+        {% if category | filterCategory %}
+            {% set cat = category | filterCategory %}
+            <a
+                href="/category/{{ category }}"
+                class="btn rounded-none btn-xs join-item border border-slate-400 hover:border-slate-400"
+                style="color: {{ cat.textColor }}; background-color: {{ cat.bgColor }}">{{ cat.name }}
+            </a>
+        {% endif %}
+    {% endfor %}
+</div>

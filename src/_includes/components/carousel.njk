@@ -1,0 +1,59 @@
+<h1 class="text-2xl mb-4 font-bold">精選文章</h1>
+
+{% css %}
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+{% endcss %}
+
+<div class="embla mb-4">
+  <div class="embla__container">
+    {% for featuredPost in collections.featuredPosts %}
+        {% if featuredPost.data.coverImage %}
+            <div class="embla__slide">
+                <a href="{{ featuredPost.url | url }}">{% coverimage featuredPost, featuredPost.data.title %}
+                    <h1 class="text-3xl font-bold leading-tight">
+                    <a href="{{ featuredPost.url | url }}">
+                    {{ featuredPost.data.title }}
+                </a>
+                    </h1>
+            </div>
+        {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{# <section id="main-carousel" class="splide mb-4">
+    <div class="splide__track">
+        <ul class="splide__list">
+            {% for featuredPost in collections.featuredPosts %}
+                {% if featuredPost.data.coverImage %}
+                    <li class="splide__slide">
+                        <a href="{{ featuredPost.url | url }}">{% coverimage featuredPost, featuredPost.data.title %}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+<section id="thumbnail-carousel" class="splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            {% for featuredPost in collections.featuredPosts %}
+                {% if featuredPost.data.coverImage %}
+                    <li class="splide__slide">
+                        {% coverimage featuredPost, featuredPost.data.title %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        
+        </ul>
+    </div>
+</section> #}

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="{{ metadata.language }}" data-theme="snakieDark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <title>{{ metadata.title if not title else title + " - " +  metadata.title }}</title>
+        <meta name="description" content="{{ description or metadata.description }}"> {#- Atom and JSON feeds included by default #}
+        <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+        <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+        <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+        <link rel="stylesheet" type="text/css" href="/assets/css/index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+        <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
+        <style>{% getBundle "css" %}</style>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1510471331766666"
+        crossorigin="anonymous"></script>
+        <meta name="google-adsense-account" content="ca-pub-1510471331766666">
+    </head>
+    <body>
+        <div class="py-8 bg-base-200" id="site">
+            <div class="py-4 lg:py-8 px-1 lg:px-4 container max-w-[1200px] mx-auto">
+                {% include "../components/topnav.njk" %}
+            </div>
+            {% include "../components/category.njk" %}
+            <main class="container max-w-[1200px] mx-auto px-4">
+                {{ content | safe }}
+            </main>
+        </div>
+        <!-- Current page: {{ page.url | htmlBaseUrl }} -->
+
+        {% block js %}
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              // Postlist infinite scroll
+              var wrap = document.querySelector('#site');
+              var spinner = document.querySelector('.spinner');
+              var checking = false;
+
+              function checkPostlist() {
+                if (checking) {
+                  return;
+                }
+                checking = true;
+                var hiddenPostlist = document.querySelectorAll(".postlist.hidden");
+
+                if (hiddenPostlist.length > 0) {
+                  spinner.classList.remove('hidden');
+
+                  setTimeout(() => {
+                    for (var i = 0; i < hiddenPostlist.length; i++) {
+                      if (i < 10) {
+                        var post = hiddenPostlist[i];
+                        hiddenPostlist[i].classList.remove('hidden');
+                      }
+                    }
+                    spinner.classList.add('hidden');
+                    checking = false;
+                  }, 250)
+                }
+              }
+
+              window.onscroll = function(ev) {
+                if ((window.innerHeight + window.pageYOffset + 20) >= wrap.offsetHeight) {
+                  checkPostlist();
+                }
+              };
+            });
+          </script>
+        {% endblock %}
+    </body>
+</html>

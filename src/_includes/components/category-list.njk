@@ -1,0 +1,19 @@
+<h1 class="text-2xl mb-4 font-bold">可能有你喜歡的目錄！</h1>
+<select class="select select-bordered w-full" id="category-select">
+  <option disabled selected>Select Category</option>
+  
+  {% for category, items in collections.categories %}
+    <option value={{category}}>{{category | translateCategory}} ({{items.length}})</option>
+  {% endfor %}
+</select>
+
+{% block js %}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var select = document.querySelector('#category-select');
+      select.addEventListener('change', function(e){
+        location.href = '/category/' + select.value;
+      });
+    });
+  </script>
+{% endblock %}

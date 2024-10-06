@@ -1,0 +1,14 @@
+---
+pagination:
+  data: collections.categories
+  size: 1
+  alias: category
+layout: layouts/home.njk
+eleventyComputed:
+title: {{ category }}
+permalink: /category/{{ category }}/
+---
+
+{% set postslistTitle = category | translateCategory %}
+{% set postslist = collections.categories[ category ] %}
+{% include "./_includes/components/postslist.njk" %}

@@ -1,0 +1,11 @@
+<div class="mt-8">
+  <h1 class="text-3xl mb-4">其他文章</h1>
+  <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+    
+    {%- set post = collections.posts | getPreviousCollectionItem %}
+    {% include "./postcard.njk" %}
+    
+    {%- set post = collections.posts | getNextCollectionItem %}
+    {% include "./postcard.njk" %}
+  </div>
+</div>

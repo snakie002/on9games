@@ -1,0 +1,98 @@
+module.exports = [
+	{
+		slug: "poe",
+		name: "流亡黯道",
+		bgColor: "#9a3412",
+		textColor: "#FFF",
+	},
+	{
+		slug: "poe-news",
+		name: "POE消息",
+		bgColor: "#808000",
+		textColor: "#FFF",
+	},
+	{
+		slug: "poe-guide",
+		name: "POE教學",
+		bgColor: "#800040",
+		textColor: "#FFF",
+	},
+	{
+		slug: "poe-ls",
+		name: "POE拓荒流派",
+		bgColor: "#008080",
+		textColor: "#FFF",
+	},
+	{
+		slug: "poe2",
+		name: "流亡黯道2",
+		bgColor: "#620000",
+		textColor: "#FFF",
+	},
+	{
+		slug: "poe2-news",
+		name: "POE2消息",
+		bgColor: "#808000",
+		textColor: "#FFF",
+	},
+	{
+		slug: "tli",
+		name: "火炬之光無限",
+		bgColor: "#eab308",
+		textColor: "#000",
+	},
+	{
+		slug: "le",
+		name: "最後紀元",
+		bgColor: "#8000ff",
+		textColor: "#FFF",
+	},
+	{
+		slug: "d4",
+		name: "暗黑破壞神4",
+		bgColor: "#6b21a8",
+		textColor: "#FFF",
+	},
+	{
+		slug: "news",
+		name: "遊戲新聞",
+		bgColor: "#ef4444",
+		textColor: "#FFF",
+	},
+	{
+		slug: "guide",
+		name: "遊戲攻略",
+		bgColor: "#0284c7",
+		textColor: "#FFF",
+	},
+	{
+		slug: "intro",
+		name: "遊戲介紹",
+		bgColor: "#d97706",
+		textColor: "#FFF",
+	},
+	{
+		slug: "factorio",
+		name: "異星工廠",
+		bgColor: "#0080ff",
+		textColor: "#FFF",
+	},
+	{
+		slug: "sp",
+		name: "單機遊戲",
+		bgColor: "#e25706",
+		textColor: "#FFF",
+	},
+	{
+		slug: "multi",
+		name: "多人連線",
+		bgColor: "#553669",
+		textColor: "#FFF",
+	},
+	{
+		slug: "others",
+		name: "友情投稿",
+		bgColor: "#553669",
+		textColor: "#FFF",
+	},
+];

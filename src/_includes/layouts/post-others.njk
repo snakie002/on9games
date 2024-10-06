@@ -1,0 +1,36 @@
+---
+layout: layouts/base.njk
+---
+<div class="flex flex-col lg:flex-row space-x-6">
+  <div>
+    <main class="post-content">
+
+{% coverimage post, page.filePathStem, coverImage %}
+<h1>{{ title }}</h1>
+
+      <div class="post-metadata mt-4 mb-8 space-y-2">
+        <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+        <div>
+          {%- for tag in tags | filterTagList %}
+            {%- set tagUrl %}/tags/{{ tag }}/{% endset %}
+            <div class="badge badge-secondary badge-lg mb-1">
+              <a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a>
+              {%- if not loop.last %}{% endif %}
+            </div>
+          {%- endfor %}
+        </div>
+      </div>
+      
+      {{ content | safe }}
+    </main>
+
+    {% include "../components/related.njk" %}
+  </div>
+  <div class="min-w-[350px] w-[350px] hidden lg:block">
+    <div class="sticky top-20">
+      {% set postslistTitle = "最近更新" %}
+      {% set postslist = collections.recentPosts %}
+      {% include "../components/side-postslist.njk" %}
+    </div>
+  </div>
+</div>
