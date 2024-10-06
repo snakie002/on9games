@@ -1,11 +1,11 @@
 module.exports = {
-	title: "on9games戇鳩遊戲",
+	title: "on9games",
 	url: "https://on9.games/",
 	language: "zh-Hant",
-	description: "on9games戇鳩遊戲 - POE 火炬之光無限 ARPG",
+	description: "on9games - POE 火炬之光無限 ARPG",
 	author: {
 		name: "何師傅",
-		email: "contact@snakie002hosifu.blog",
-		url: "https://snakie002hosifu.blog/contact/",
+		email: "on9.games.contact@gmail.com",
+		url: "https://on9.games/contact/",
 	},
 };
