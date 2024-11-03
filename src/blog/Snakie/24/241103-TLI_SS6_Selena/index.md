@@ -4,13 +4,11 @@ date: "2024-11-03"
 categories:
   - "tli"
   - "guide"
-  - ""
 tags:
   - "何師傅"
   - "火炬之光無限"
   - "畫中雪原"
   - "SS6"
-  - ""
 coverImage: "post_assets/thumbnail.jpg"
 
 
