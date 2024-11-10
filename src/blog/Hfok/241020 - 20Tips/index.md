@@ -39,7 +39,7 @@ coverImage: "post_assets/thumbnail.jpg"
 
 ## 異星工廠百科 (Alt + 左擊)
 
-![](ede4301d2dea1a9d55b6b8dbb6979947.JPG)
+![](post_assets/ede4301d2dea1a9d55b6b8dbb6979947.JPG)
 
 百科裡面你要的資訊都齊存
 隨便左擊任何地方(包括地面)
@@ -48,7 +48,7 @@ coverImage: "post_assets/thumbnail.jpg"
 
 ## 機械臂篩選器&號線研發改動
 
-![](f2c2b140044b0b1d132f4175a8860161.JPG)
+![](post_assets/f2c2b140044b0b1d132f4175a8860161.JPG)
 
 兩個一開始就有
 不再需要研發
@@ -56,7 +56,7 @@ coverImage: "post_assets/thumbnail.jpg"
 
 ## 強行放置規劃 (Ctrl+Shift+左擊)
 
-![](892f9d620dd0328eae216ed01589380f.JPG)
+![](post_assets/892f9d620dd0328eae216ed01589380f.JPG)
 
 一般規劃器不會幫你改變輸送帶 (左)
 強行放置規劃會自動把輸送帶變成地下輸送帶 (右)
@@ -64,7 +64,7 @@ coverImage: "post_assets/thumbnail.jpg"
 
 ## 搜尋功能 (Ctrl+F)
 
-![](b31cc25cb1cc0f0c14be16d654d36f8b.JPG)
+![](post_assets/b31cc25cb1cc0f0c14be16d654d36f8b.JPG)
 
 這個功能大幅改善開採資源效率
 直接搜尋到你要的東西在那裡
