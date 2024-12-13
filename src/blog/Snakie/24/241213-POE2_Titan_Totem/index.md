@@ -126,24 +126,25 @@ coverImage: "post_assets/thumbnail.jpg"
 
 
 ## <u> 技能連結 </u>
-![](post_assets/S1.png)
+
+![](post_assets/S1.PNG)
 單體暈眩技能 一鎚不暈 兩鎚也差不了多少
 
-![](post_assets/S2.png)
+![](post_assets/S2.PNG)
 位移技 也有很高傷害 白怪都會給爆死
 
-![](post_assets/S3.png)
+![](post_assets/S3.PNG)
 單體必殺技能 情況許可請先戰吼再使用 會強化很多
 
-![](post_assets/S4.png)
+![](post_assets/S4.PNG)
 主力清圖技能
 注意 遊戲會說不能安排這些輔助寶石
 其實是可以的 應該是BUG 所以說搶先體驗 肯定很多BUG的
 
-![](post_assets/S5.png)
+![](post_assets/S5.PNG)
 戰士當然要戰吼 但除了打王外其實沒甚麼用
 
-![](post_assets/S6.png)
+![](post_assets/S6.PNG)
 光環類 很多都非必要 按個人喜愛即可
 
 
