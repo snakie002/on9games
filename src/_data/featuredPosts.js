@@ -22,10 +22,10 @@ module.exports = {
 			slug: "220307-Elden_Ring_Main_Quest_Ending_Guide",
 		},
 		{
-			slug: "FeaturedPost8",
+			slug: "241103-TLI_SS6_Selena",
 		},
 		{
-			slug: "FeaturedPost9",
+			slug: "241213-POE2_Titan_Totem",
 		},
 		{
 			slug: "FeaturedPost10",
