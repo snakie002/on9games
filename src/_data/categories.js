@@ -36,6 +36,12 @@ module.exports = [
 		textColor: "#FFF",
 	},
 	{
+		slug: "poe2-guide",
+		name: "POE2教學",
+		bgColor: "#808080",
+		textColor: "#FFF",
+	},
+	{
 		slug: "tli",
 		name: "火炬之光無限",
 		bgColor: "#eab308",

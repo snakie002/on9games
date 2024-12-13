@@ -1,9 +1,9 @@
 ---
-title: ""
-date: "2023-12-07"
+title: "【POE2】T0近戰！輕鬆T15及通碟10層 泰坦雙持雙手雙天賦 | Titan Totem Dual Weapon Passive | 新系統武器切換解說 | 流亡黯道2 遊戲攻略 | Path of Exile 2"
+date: "2024-12-13"
 categories:
   - "poe2"
-  - ""
+  - "poe2-guide"
   - ""
 tags:
   - "何師傅"
