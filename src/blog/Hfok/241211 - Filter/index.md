@@ -2,8 +2,8 @@
 title: "1參數化藍圖 - 一鍵設定的藍圖"
 date: "2024-12-11"
 categories:
-  - "pathofexile2"
-  - "guide"
+  - "poe2"
+  - "poe2-guide"
   - ""
 tags:
   - "hfok"
