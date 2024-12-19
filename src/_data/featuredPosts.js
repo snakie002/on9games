@@ -7,9 +7,6 @@ module.exports = {
 			slug: "240818-POE_3.25_T17_Map_Testing",
 		},
 		{
-			slug: "240831-POE_3.25_Necromancer_Forged Frostbearer",
-		},
-		{
 			slug: "240915-POE_3.25_Slayer_Vaal_Lightning_Strike",
 		},
 		{
@@ -28,7 +25,7 @@ module.exports = {
 			slug: "241213-POE2_Titan_Totem",
 		},
 		{
-			slug: "FeaturedPost10",
+			slug: "241218-POE2_Titan_Endgame",
 		},
 	],
 };
