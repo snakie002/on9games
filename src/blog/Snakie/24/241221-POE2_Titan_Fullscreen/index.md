@@ -45,12 +45,12 @@ coverImage: "post_assets/thumbnail.jpg"
 
 ## <u> 裝備改變 </u>
 
-![](post_assets/E1.png)  
+![](post_assets/E1.png)
 
 只需用上教徒巨錘即可，但必須留意力量問題，確保有足夠能力值才買！
   
 ## <u> 技能連結 </u>
-![](post_assets/S1.png)  
+![](post_assets/S1.png)
 
 基本上四洞已經足夠 五洞可放的輔助不多 不要就是增加傷害 或是攻速等 所以其實可用的東西不多 衝擊震波可以湊著用 或放上喜愛的技能 （盛怒是不錯的選擇）
 
