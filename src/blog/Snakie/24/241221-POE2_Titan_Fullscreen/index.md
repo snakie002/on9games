@@ -45,18 +45,18 @@ coverImage: "post_assets/thumbnail.jpg"
 
 ## <u> 裝備改變 </u>
 
-![](post_assets/E1.png)
+![](post_assets/E1.PNG)
 
 只需用上教徒巨錘即可，但必須留意力量問題，確保有足夠能力值才買！
   
 ## <u> 技能連結 </u>
-![](post_assets/S1.png)
+![](post_assets/S1.PNG)
 
 基本上四洞已經足夠 五洞可放的輔助不多 不要就是增加傷害 或是攻速等 所以其實可用的東西不多 衝擊震波可以湊著用 或放上喜愛的技能 （盛怒是不錯的選擇）
 
 
 ## <u> 注意事項 </u>
-![](post_assets/3.png)  
+![](post_assets/3.PNG)  
 由於現在還是EA階段 真的會有很多改動 雖然這個應該可以保留到新年過後 不過也要有心理準備隨時又會再改動的 所以 早玩早享受 再玩不能夠 要留意了
   
 
