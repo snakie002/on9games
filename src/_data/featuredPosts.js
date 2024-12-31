@@ -7,7 +7,7 @@ module.exports = {
 			slug: "240818-POE_3.25_T17_Map_Testing",
 		},
 		{
-			slug: "240915-POE_3.25_Slayer_Vaal_Lightning_Strike",
+			slug: "241231-POE2_Invoker_TriStack",
 		},
 		{
 			slug: "240216-P3R_Elizabeth",
