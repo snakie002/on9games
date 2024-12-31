@@ -238,6 +238,8 @@ coverImage: "post_assets/thumbnail.jpg"
 所以要留意這個組合 不要往傷害向想
 要為觸發可能而去配搭
 
+有需要的朋友可到[阿草的連結](https://www.youtube.com/watch?v=2GEwt6pZvGU&t)看看詳細介紹
+
 ![](post_assets/S7.PNG)
 
 ![](post_assets/S8.PNG)
