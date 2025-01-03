@@ -1,15 +1,15 @@
 ---
 title: "生嚿叉燒好過生你 港產無厘頭遊戲"
-date: "2024-12-31"
+date: "2025-01-01"
 categories:
   - "indie"
-  - "solo"
-  - ""
+  - "intro"
+  - "sp"
 tags:
   - "hfok"
   - "indie"
   - "單機"
-coverImage: "post_assets/THUMBNAILjpg"
+coverImage: "post_assets/THUMBNAIL.jpg"
 
 ---
 
@@ -88,9 +88,4 @@ coverImage: "post_assets/THUMBNAILjpg"
 非常適合想輕鬆玩遊戲又想笑的香港人
 也非常適合一些想學更多粵語的人玩
 
-<iframe src="https://store.steampowered.com/widget/2540860/?utm_source=homepage&utm_campaign=mycampaign" frameborder="0" width="640" height="190"></iframe>
-
-<!-- // UTM parameters are included on Store page links within the widget -->
-<a href="https://store.steampowered.com/app/2540860//?utm_source=homepage&utm_campaign=mycampaign"/>
-
-<iframe src="https://storesteampoweredcom/widget/2540860/" frameborder="0" width="640" height="190"></iframe>
+<iframe src="https://store.steampowered.com/widget/2540860/?utm_source=homepage&utm_campaign=mycampaign" frameborder="0" width="60%" height="190"></iframe>
