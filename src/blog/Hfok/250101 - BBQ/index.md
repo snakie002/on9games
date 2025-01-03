@@ -15,7 +15,7 @@ coverImage: "post_assets/THUMBNAIL.jpg"
 
 <!-- Embed -->
 
-<iframe width="100%" height="440" src="https://wwwyoutubecom/embed/upn7KDHdqo8" 
+<iframe width="100%" height="440" src="https://www.youtube.com/embed/upn7KDHdqo8" 
   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
   clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -88,4 +88,4 @@ coverImage: "post_assets/THUMBNAIL.jpg"
 非常適合想輕鬆玩遊戲又想笑的香港人
 也非常適合一些想學更多粵語的人玩
 
-<iframe src="https://store.steampowered.com/widget/2540860/?utm_source=homepage&utm_campaign=mycampaign" frameborder="0" width="60%" height="190"></iframe>
+<iframe src="https://store.steampowered.com/widget/2540860/?utm_source=homepage&utm_campaign=mycampaign" frameborder="0" width="100%" height="190"></iframe>
