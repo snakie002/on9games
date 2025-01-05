@@ -29,7 +29,8 @@ coverImage: "post_assets/THUMBNAIL.jpg"
 同時混合了一些rogue-lite 元素遊戲
 整個遊戲都有粵語和國語配音隨你選擇
 
-## 視角小說
+# 視角小說
+
 ![](post_assets/ss_15f19321d3e8f563e9f06b6900d8c2d5891751a0.1920x1080.jpg)
 
 故事可以說是這個遊戲的重心
@@ -46,7 +47,8 @@ coverImage: "post_assets/THUMBNAIL.jpg"
 也有一些原創但是同樣好笑的笑話
 所以玩起來非常親切 
 
-## Rogue-lite 元素
+## <a name="Rogue-lite"></a>Rogue-lite 元素
+
 ![](post_assets/ss_d2a62e30fb89646b5fdccd0d5a79c648acb9b20e.1920x1080.jpg)
 
 在遊戲過程中, 你需要不停往更低層的地獄探索
