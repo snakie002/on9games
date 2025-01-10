@@ -127,19 +127,19 @@ coverImage: "post_assets/thumbnail.jpg"
 
 務必拿到＋６０精魂才可正常運作，沒有６０的話是開不了感電時施放，那單體問題就會非常嚴重，要注意！
 
-![](post_assets/S1.png)  
+![](post_assets/S1.PNG)  
 主動技能，閃電穿透可以換其他增傷，減消耗其實也算是必須，因為沒有的話是非常困難打續航
 
-![](post_assets/S2.png) 
+![](post_assets/S2.PNG) 
 感電時施放導雷為單體輸出，注意要最大化輸出必須配搭風暴漩渦內使用電球才行
 
-![](post_assets/S3.png)
+![](post_assets/S3.PNG)
 風暴漩渦是感電主要來源，所以要盡量在打王時候放到有利位置，所有輔助都是向感電機率 效果及曝曬出發
 
-![](post_assets/S4.png)
+![](post_assets/S4.PNG)
 詛咒傷害，打王很明顯
 
-![](post_assets/S5.png)
+![](post_assets/S5.PNG)
 光環來源
 
 ## <u> 感想心得 </u>
