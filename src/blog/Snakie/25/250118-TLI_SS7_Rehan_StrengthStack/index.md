@@ -114,46 +114,46 @@ Torchlight Infinite火炬之光無限SS7宿命塔羅經已推出一星期，這�
 
 ## <u>裝備選擇</u>
 
-![](post_assets/E0.png)  
+![](post_assets/E0.PNG)  
 
 要打造的裝備只有5件，而且要求不高，沒有任何Ｔ０詞綴，所以非常適合新手朋友們！
 
-![](post_assets/E1.png)  
+![](post_assets/E1.PNG)  
 
 不選力量頭就選用神驅，傷害不差很多，但的確神驅無法回血的問題還是挺嚴重，個人要求選擇，在傷害上去後選用力頭感覺會好很多
 
 
-![](post_assets/E2.png)  
+![](post_assets/E2.PNG)  
 
 胸甲，影片有提供參考，新手可以先選正常版本，待資金上去後才選３力量詞即可！優先選擇最後的額外元素傷，非常有感！
 
 
-![](post_assets/E3.png)  
+![](post_assets/E3.PNG)  
 
 如影片所說，入門可選兩力兩生命，後期轉三力一生命即可
 
-![](post_assets/E4.png)  
+![](post_assets/E4.PNG)  
 
 千力手為綁定，也是堅祝回圈的重點，不強求侵蝕詞，有當然更好！
 
-![](post_assets/E5.png)  
+![](post_assets/E5.PNG)  
 
 基本配置，角色極缺抗性，全Ｔ１是基本要求，前詞隨便即可
 
-![](post_assets/E6.png)  
+![](post_assets/E6.PNG)  
 
 移速及物理為必需，抗性不足可換暴擊值，生命比護甲有效（護甲在塔羅怪面前只是白紙一張）
 
-![](post_assets/E7.png)  
+![](post_assets/E7.PNG)  
 
-![](post_assets/E8.png)  
+![](post_assets/E8.PNG)  
 
 戒指１＆２
 都是一樣，堅祝，元素穿透優先，其他可按抗性要求或暴傷即可，前詞力量比點傷更有效，雖然面板是點傷較好，但力量提供的生命，護甲，額外傷，火傷，會更佳！
 
 解夢目標為一堅祝及一元素破壞，其他都沒太大用途，要有心理準備，這兩個都是貴價詞。。。看臉吧
 
-![](post_assets/E9.png)  
+![](post_assets/E9.PNG)  
 
 武器非常簡單直接 如下：
 
@@ -163,7 +163,7 @@ Torchlight Infinite火炬之光無限SS7宿命塔羅經已推出一星期，這�
 
 其他作用都不太大，特別攻速因為是武器攻速而不是全域，所以不建議
 
-![](post_assets/E10.png)  
+![](post_assets/E10.PNG)  
 
 魂觸
 必要詞綴只有一個
@@ -175,7 +175,7 @@ Torchlight Infinite火炬之光無限SS7宿命塔羅經已推出一星期，這�
 
 想玩光環就要保留，按個人要求及財力即可
 
-![](post_assets/E11.png)  
+![](post_assets/E11.PNG)  
 
 ## <u>感想心得 </u>
 
