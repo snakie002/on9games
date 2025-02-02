@@ -1,21 +1,21 @@
 ---
 title: "生嚿叉燒好過生你 港產無厘頭遊戲"
-date: "2025-01-01"
+date: "2024-12-31"
 categories:
   - "indie"
-  - "intro"
-  - "sp"
+  - "solo"
+  - ""
 tags:
   - "hfok"
   - "indie"
   - "單機"
-coverImage: "post_assets/THUMBNAIL.jpg"
+coverImage: "post_assets/THUMBNAILjpg"
 
 ---
 
 <!-- Embed -->
 
-<iframe width="100%" height="440" src="https://www.youtube.com/embed/nhqCxAqehpA" 
+<iframe width="100%" height="440" src="https://wwwyoutubecom/embed/upn7KDHdqo8" 
   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
   clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -29,8 +29,7 @@ coverImage: "post_assets/THUMBNAIL.jpg"
 同時混合了一些rogue-lite 元素遊戲
 整個遊戲都有粵語和國語配音隨你選擇
 
-# 視角小說
-
+## 視角小說
 ![](post_assets/ss_15f19321d3e8f563e9f06b6900d8c2d5891751a0.1920x1080.jpg)
 
 故事可以說是這個遊戲的重心
@@ -47,8 +46,7 @@ coverImage: "post_assets/THUMBNAIL.jpg"
 也有一些原創但是同樣好笑的笑話
 所以玩起來非常親切 
 
-## <a name="Rogue-lite"></a>Rogue-lite 元素
-
+## Rogue-lite 元素
 ![](post_assets/ss_d2a62e30fb89646b5fdccd0d5a79c648acb9b20e.1920x1080.jpg)
 
 在遊戲過程中, 你需要不停往更低層的地獄探索
@@ -90,4 +88,4 @@ coverImage: "post_assets/THUMBNAIL.jpg"
 非常適合想輕鬆玩遊戲又想笑的香港人
 也非常適合一些想學更多粵語的人玩
 
-<iframe src="https://store.steampowered.com/widget/2540860/?utm_source=homepage&utm_campaign=mycampaign" frameborder="0" width="100%" height="190"></iframe>
+<iframe src="https://storesteampoweredcom/widget/2540860/" frameborder="0" width="640" height="190"></iframe>
