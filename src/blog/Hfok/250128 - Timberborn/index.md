@@ -2,8 +2,8 @@
 title: "Timerborn：河狸浮生記——水力學與河狸的殖民模擬冒險"
 date: "2025-01-28"
 categories:
-  - "indie"
-  - "solo"
+  - "intro"
+  - "sp"
   - ""
 tags:
   - "hfok"

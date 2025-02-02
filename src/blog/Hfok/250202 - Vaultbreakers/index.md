@@ -2,8 +2,8 @@
 title: "龍窟破壞者免費限時公測指南"
 date: "2025-02-02"
 categories:
-  - "indie"
-  - "multiplayer"
+  - "intro"
+  - "multi"
   - ""
 tags:
   - "hfok"

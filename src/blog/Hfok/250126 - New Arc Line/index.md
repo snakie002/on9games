@@ -2,8 +2,8 @@
 title: "New Arc Line EA 版體驗：一款劇情驅動的 CRPG 新作"
 date: "2025-01-26"
 categories:
-  - "indie"
-  - "solo"
+  - "intro"
+  - "sp"
   - ""
 tags:
   - "hfok"

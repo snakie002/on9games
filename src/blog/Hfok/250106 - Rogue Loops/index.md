@@ -2,8 +2,8 @@
 title: "Rogue Loops 試玩版內容解析：一款結合 Hades 與 Loop Hero 的 Rogue-lite 遊戲"
 date: "2025-01-06"
 categories:
-  - "INTRO"
-  - "SP"
+  - "intro"
+  - "sp"
   - ""
 tags:
   - "hfok"

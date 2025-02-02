@@ -2,8 +2,8 @@
 title: "生嚿叉燒好過生你 港產無厘頭遊戲"
 date: "2024-12-31"
 categories:
-  - "indie"
-  - "solo"
+  - "intro"
+  - "sp"
   - ""
 tags:
   - "hfok"

@@ -2,8 +2,8 @@
 title: "Coridden：一款適合多人遊玩的悠閒打寶ARPG"
 date: "2025-02-01"
 categories:
-  - "indie"
-  - "multiplayer"
+  - "intro"
+  - "multi"
   - ""
 tags:
   - "hfok"
