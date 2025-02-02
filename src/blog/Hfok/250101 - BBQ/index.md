@@ -9,13 +9,13 @@ tags:
   - "hfok"
   - "indie"
   - "單機"
-coverImage: "post_assets/THUMBNAILjpg"
+coverImage: "post_assets/THUMBNAIL.jpg"
 
 ---
 
 <!-- Embed -->
 
-<iframe width="100%" height="440" src="https://wwwyoutubecom/embed/upn7KDHdqo8" 
+<iframe width="100%" height="440" src="https://www.youtubecom/embed/upn7KDHdqo8" 
   title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
   clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
