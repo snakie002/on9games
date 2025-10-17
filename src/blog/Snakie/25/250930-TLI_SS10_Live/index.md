@@ -162,23 +162,22 @@ https://torchlight.xd.com/zh-tw/news/single?id=89n09uY5dE8F
 
 
 火炬之光,
-火炬之光 SS8,
-火炬之光 沙海,
-火炬之光 真金,
-火炬之光 月女,
-火炬之光 拓印,
+火炬之光 SS10,
+火炬之光 疊界,
+火炬之光 賓,
+火炬之光 魂燭,
+火炬之光 新手,
+火炬之光 契靈,
 火炬之光 懶人包,
-火炬之光 係金欸,
 
-Torchlight: Infinite ,
-Torchlight: Infinite SS8,
-Torchlight: Infinite 沙海,
-Torchlight: Infinite 真金,
-Torchlight: Infinite 月女,
-Torchlight: Infinite 拓印,
-Torchlight: Infinite 懶人勾,
-Torchlight: Infinite 係金欸,
-
+Torchlight: Infinite,
+Torchlight: Infinite SS10,
+Torchlight: Infinite 疊界,
+Torchlight: Infinite 賓,
+Torchlight: Infinite 魂燭,
+Torchlight: Infinite 新手,
+Torchlight: Infinite 契靈,
+Torchlight: Infinite 懶人包,
 
 -->
 
