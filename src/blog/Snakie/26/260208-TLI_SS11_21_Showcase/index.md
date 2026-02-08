@@ -1,6 +1,6 @@
 ---
 title: "【火炬之光：無限】分身靈爆斬畢業紀錄！貓三九十大抗蟬銳雙虹深空游泳 | 附無腦大戰三星廿一層片段 | 詳細機體配置解說 | SS11 渴血症 Torchlight:Infinite"
-date: "2026-01-24"
+date: "2026-02-08"
 categories:
   - "tli"
   - "guide"
