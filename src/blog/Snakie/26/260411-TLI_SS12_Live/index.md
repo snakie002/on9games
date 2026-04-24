@@ -122,7 +122,7 @@ topic:
 【火炬之光：無限】SS12 明月狂想曲直播前瞻懶人包 三週年紀念鈔真金再現 | 召喚模組 靈藥系統登場 | 新英雄 藥劑師賽琪 | 槍二性轉 法術爆裂 | Torchlight: Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/260411-TLI_SS11_Live/
+https://on9.games/260411-TLI_SS12_Live/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY
