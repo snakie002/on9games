@@ -19,13 +19,13 @@ module.exports = {
 			slug: "220307-Elden_Ring_Main_Quest_Ending_Guide",
 		},
 		{
-			slug: "241103-TLI_SS6_Selena",
+			slug: "260424-TLI_SS12_Chromatic_Shot",
 		},
 		{
-			slug: "241213-POE2_Titan_Totem",
+			slug: "260208-TLI_SS11_21_Showcase",
 		},
 		{
-			slug: "241218-POE2_Titan_Endgame",
+			slug: "251017-TLI_SS10_Necklace_of_Firebird",
 		},
 	],
 };
