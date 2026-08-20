@@ -22,6 +22,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({
 		"./src/public/img": "/assets/img",
 	});
+	eleventyConfig.addPassthroughCopy("./src/_redirects");
 
 	// eleventyConfig.addPassthroughCopy("./src/blog/**/*.{svg,webp,png,jpg,jpeg}");
 
