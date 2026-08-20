@@ -1,5 +1,15 @@
 module.exports = {
 	tags: ["posts"],
 	layout: "layouts/post.njk",
-	permalink: "{{ page.fileSlug }}/index.html",
+	permalink: function(data) {
+		// Extract year from date (YYYY-MM-DD format)
+		if (data.date) {
+			const d = new Date(data.date);
+			if (!isNaN(d)) {
+				const yy = String(d.getFullYear()).slice(-2);
+				return yy + '/' + data.page.fileSlug + '/index.html';
+			}
+		}
+		return data.page.fileSlug + '/index.html';
+	}
 };
