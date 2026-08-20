@@ -4,7 +4,7 @@ module.exports = {
 			slug: "240804-POE_3.25_Gladiator_Bleed_Lacerate",
 		},
 		{
-			slug: "240818-POE_3.25_T17_Map_Testing",
+			slug: "260507-TLI_SS12_Whirlwind_21",
 		},
 		{
 			slug: "241231-POE2_Invoker_TriStack",
