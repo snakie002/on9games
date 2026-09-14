@@ -81,6 +81,16 @@ module.exports = function (eleventyConfig) {
 			: `<figure class="game-cover">${img}</figure>`;
 	});
 
+	// Absolute production URL for a post asset (e.g. the article thumbnail), resolved through the same
+	// MEDIA_SERVER architecture as `coverimage`. Returns "" when the post has no coverImage, so the
+	// layout can fall back to a site-level image. Used for og:image / twitter:image.
+	// Filter form so it is callable inside a Nunjucks expression: {{ coverImage | assetUrl(page.filePathStem) }}
+	eleventyConfig.addFilter("assetUrl", function (file, filePathStem) {
+		if (!file || !filePathStem) return "";
+		const postPath = String(filePathStem).replace("/blog/", "").replace("/index", "");
+		return `${process.env.MEDIA_SERVER}/${path.posix.join(postPath, String(file).replace(/\\/g, "/"))}`;
+	});
+
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
 		// Formatting tokens for Luxon: https://moment.github.io/luxon/#/formatting?id=table-of-tokens

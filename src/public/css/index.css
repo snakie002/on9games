@@ -190,3 +190,40 @@ body {
 	height: 190px;
 	border: 0;
 }
+
+/* ---- heading permalink marker (hotfix #1) ----
+   markdown-it-anchor still emits <a class="header-anchor" href="#id">#</a> so heading IDs and
+   direct section links keep working. Only the PRESENTATION changes: the marker is hidden until the
+   heading is hovered or the anchor itself receives keyboard focus. */
+.post-content .header-anchor {
+	opacity: 0;
+	margin-left: .35rem;
+	font-weight: 400;
+	text-decoration: none;
+	color: hsl(var(--bc) / .45);
+	transition: opacity .15s ease-in-out;
+}
+.post-content h1:hover .header-anchor,
+.post-content h2:hover .header-anchor,
+.post-content h3:hover .header-anchor,
+.post-content h4:hover .header-anchor,
+.post-content .header-anchor:focus-visible {
+	opacity: 1;
+}
+/* Touch devices have no hover: keep the marker out of the way entirely. */
+@media (hover: none) {
+	.post-content .header-anchor { display: none; }
+}
+
+/* ---- long CJK heading wrapping (hotfix #1) ----
+   The theme sets `break-keep` on headings, which forbids breaks inside CJK runs and makes a long
+   Chinese title overflow a 412px viewport. Allow normal CJK line breaking on headings while keeping
+   English words intact (`overflow-wrap: break-word` only breaks a word that cannot fit alone). */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+	word-break: normal;
+	line-break: auto;
+	overflow-wrap: break-word;
+}

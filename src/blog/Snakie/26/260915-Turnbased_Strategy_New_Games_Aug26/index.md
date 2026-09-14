@@ -1,5 +1,6 @@
 ---
-title: "【新作整理】2026年8月下旬 值得留意的12款 回合制、戰棋與策略遊戲"
+title: "【新作整理】2026年8月下旬值得留意的12款回合制、戰棋與策略遊戲"
+description: "整理2026年8月下旬值得留意的12款回合制、戰棋與策略新作，包括推出狀態、中文支援、Demo、官方截圖、Steam頁面與官方預告。"
 date: "2026-09-15"
 categories:
   - "sp"
@@ -232,9 +233,9 @@ Demo：有
 
 有Demo的有十款，只有Deadlock Station和Beyond the Fracture兩款沒有。語言方面，支援繁體中文的有四款：Deadlock Station、Trails in the Sky 2nd Chapter、Stellar Freight: Endless Horizon和Solar Wave；ROBOSCAV和Tight Tactics只列簡體中文；其餘六款沒有中文，要有英文閱讀的準備。
 
-師傅自己最想試的是Stellar Freight和Deadlock Station，一個是有繁中的太空貨運Roguelike，一個是操控方式比較特別的戰術Roguelike；不過這只是看完官方頁面的第一印象，前者等Demo試過、後者要直接入手玩過，才能再跟大家分享。
+師傅自己最想試的是Stellar Freight和Deadlock Station，一款是支援繁中的太空貨運Roguelike，另一款則是操控方式比較特別的戰術Roguelike。不過這些都只是看完官方資料後的第一印象，之後實際玩過有興趣的作品，再跟大家分享心得。
 
-如果覺得這類新作整理有用，師傅會考慮定期做下去。大家如果有玩過其中任何一款，也歡迎在留言分享一下感想。
+如果大家覺得這類新作整理有用，記得訂閱何師傅的YouTube頻道。之後有值得留意的回合制、戰棋及策略新作，我也會繼續整理給大家。
 
 差不多這樣了，希望可以幫到大家！謝謝你！
 如果想繼續看到遊戲攻略評價，各式各樣遊戲影片，

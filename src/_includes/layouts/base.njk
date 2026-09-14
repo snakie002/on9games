@@ -11,8 +11,28 @@
         </script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=0.8">
-        <title>{{ metadata.title if not title else title + " - " +  metadata.title }}</title>
-        <meta name="description" content="{{ description or metadata.description }}"> {#- Atom and JSON feeds included by default #}
+        {%- set pageTitle = metadata.title if not title else title + " - " + metadata.title %}
+        {%- set pageDescription = description or metadata.description %}
+        {%- set ogImage = coverImage | assetUrl(page.filePathStem) %}
+        <title>{{ pageTitle }}</title>
+        <meta name="description" content="{{ pageDescription }}"> {#- Atom and JSON feeds included by default #}
+        {#- Article-specific social metadata. Falls back to site-level values for pages/old posts
+            that have no `description` / `coverImage` frontmatter. #}
+        <meta property="og:site_name" content="{{ metadata.title }}">
+        <meta property="og:locale" content="zh_HK">
+        <meta property="og:type" content="{{ "article" if title else "website" }}">
+        <meta property="og:title" content="{{ title or metadata.title }}">
+        <meta property="og:description" content="{{ pageDescription }}">
+        <meta property="og:url" content="https://on9.games{{ page.url }}">
+        {%- if ogImage %}
+        <meta property="og:image" content="{{ ogImage }}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="{{ ogImage }}">
+        {%- else %}
+        <meta name="twitter:card" content="summary">
+        {%- endif %}
+        <meta name="twitter:title" content="{{ title or metadata.title }}">
+        <meta name="twitter:description" content="{{ pageDescription }}">
         <link rel="icon" type="image/png" href="/assets/img/favicon.png">
         <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
         <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
