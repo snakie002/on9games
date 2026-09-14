@@ -21,6 +21,7 @@ module.exports = function (eleventyConfig) {
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
 		"./src/public/img": "/assets/img",
+		"./src/public/js": "/assets/js",
 	});
 	eleventyConfig.addPassthroughCopy("./src/_redirects");
 
@@ -44,6 +45,41 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+
+	// Lazy YouTube facade (Phase 4B): {% lazyYouTube "VIDEO_ID", "Title" %}
+	// Renders a poster + play button; the real youtube-nocookie iframe is created client-side on click
+	// by /assets/js/lazy-youtube.js. Template: src/_includes/components/lazy-youtube.njk
+	eleventyConfig.addShortcode("lazyYouTube", function (id, title) {
+		const safeId = String(id || "").replace(/[^A-Za-z0-9_-]/g, "");
+		if (safeId.length !== 11) {
+			throw new Error(`lazyYouTube: invalid YouTube id "${id}"`);
+		}
+		const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+		const t = esc(title || "YouTube video");
+		return (
+			`<div class="lazy-yt" data-yt-id="${safeId}" data-yt-title="${t}">` +
+			`<img class="lazy-yt__poster" loading="lazy" decoding="async" width="480" height="360" src="https://i.ytimg.com/vi/${safeId}/hqdefault.jpg" alt="">` +
+			`<span class="lazy-yt__play" aria-hidden="true"></span>` +
+			`<span class="lazy-yt__label">▶ ${t}</span>` +
+			`<a class="lazy-yt__fallback" href="https://www.youtube.com/watch?v=${safeId}" target="_blank" rel="noopener noreferrer">在 YouTube 觀看：${t}</a>` +
+			`</div>`
+		);
+	});
+
+	// Official game image with optional caption (Phase 4B-3): {% gameImage "file.webp", "alt", w, h, "caption" %}
+	// Resolves the URL the same way `coverimage` does (MEDIA_SERVER + post path), so it works with the
+	// existing S3/local media convention without changing the markdown image pipeline.
+	eleventyConfig.addShortcode("gameImage", function (file, alt, width, height, caption) {
+		const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+		const safeFile = String(file || "").replace(/[^A-Za-z0-9_.-]/g, "");
+		const postPath = this.page.filePathStem.replace("/blog/", "").replace("/index", "");
+		const src = `${process.env.MEDIA_SERVER}/${path.posix.join(postPath, "post_assets", safeFile)}`;
+		const dims = width && height ? ` width="${parseInt(width, 10)}" height="${parseInt(height, 10)}"` : "";
+		const img = `<img src="${src}" alt="${esc(alt)}"${dims} loading="lazy" decoding="async">`;
+		return caption
+			? `<figure class="game-shot">${img}<figcaption>${esc(caption)}</figcaption></figure>`
+			: `<figure class="game-cover">${img}</figure>`;
+	});
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
