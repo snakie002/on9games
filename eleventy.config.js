@@ -17,6 +17,10 @@ const categories = require("./src/_data/categories.js");
 const featuredPosts = require("./src/_data/featuredPosts.js");
 
 module.exports = function (eleventyConfig) {
+	// The Cloudflare Pages env var can carry surrounding whitespace/newlines; trim it once so no
+	// generated URL (img src, og:image, ...) contains a stray newline.
+	const MEDIA_SERVER = String(process.env.MEDIA_SERVER || "").trim().replace(/\/+$/, "");
+
 	// Copy the contents of the `public` folder to the output folder
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
@@ -73,7 +77,7 @@ module.exports = function (eleventyConfig) {
 		const esc = (s) => String(s || "").replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 		const safeFile = String(file || "").replace(/[^A-Za-z0-9_.-]/g, "");
 		const postPath = this.page.filePathStem.replace("/blog/", "").replace("/index", "");
-		const src = `${process.env.MEDIA_SERVER}/${path.posix.join(postPath, "post_assets", safeFile)}`;
+		const src = `${MEDIA_SERVER}/${path.posix.join(postPath, "post_assets", safeFile)}`;
 		const dims = width && height ? ` width="${parseInt(width, 10)}" height="${parseInt(height, 10)}"` : "";
 		const img = `<img src="${src}" alt="${esc(alt)}"${dims} loading="lazy" decoding="async">`;
 		return caption
@@ -88,7 +92,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("assetUrl", function (file, filePathStem) {
 		if (!file || !filePathStem) return "";
 		const postPath = String(filePathStem).replace("/blog/", "").replace("/index", "");
-		return `${process.env.MEDIA_SERVER}/${path.posix.join(postPath, String(file).replace(/\\/g, "/"))}`;
+		return `${MEDIA_SERVER}/${path.posix.join(postPath, String(file).replace(/\\/g, "/"))}`;
 	});
 
 	// Filters
@@ -261,7 +265,7 @@ module.exports = function (eleventyConfig) {
 		processHTML: false,
 		replaceLink: function (link, env, token, htmlToken) {
 			if (link.startsWith("post_assets/")) {
-				const imgPath = `${process.env.MEDIA_SERVER}/${path.join(
+				const imgPath = `${MEDIA_SERVER}/${path.join(
 					env.page.filePathStem.replace("/blog/", "").replace("/index", ""),
 					link
 				)}`;

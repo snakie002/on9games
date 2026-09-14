@@ -42,7 +42,7 @@ module.exports = (eleventyConfig) => {
             try {
                 const filepath = post?.filePathStem || filePathStem;
                 const coverImage = post?.data.coverImage || coverImage2;
-                const serverUrl = process.env.MEDIA_SERVER;
+                const serverUrl = String(process.env.MEDIA_SERVER || "").trim().replace(/\/+$/, "");
 				
                 const src = `${serverUrl}/${path.join(
                     filepath.replace("/blog/", "").replace("/index", ""),
