@@ -1,7 +1,7 @@
 ---
 title: 【新作情報】戰術 Roguelite《Dog in the Machine》定檔9月29日 — 多米諾碰撞與連鎖反應的戰場
 description: Studio Chahut 開發、Goblinz Publishing 發行的戰術 Roguelite《Dog in the Machine》預計2026年9月29日登上 Steam。以多米諾碰撞系統與即時預覽為核心，玩家操控一隻機械犬在反烏托邦機械都市中突圍。
-coverImage: post_assets/thumbnail.jpg
+coverImage: post_assets/thumbnail-v2.jpg
 date: 2026-09-17
 tags:
   - 何師傅
