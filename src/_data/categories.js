@@ -101,4 +101,10 @@ module.exports = [
 		bgColor: "#553669",
 		textColor: "#FFF",
 	},
+	{
+		slug: "onimusha-wots",
+		name: "鬼武者 Way of the Sword",
+		bgColor: "#7f1d1d",
+		textColor: "#FFF",
+	},
 ];
