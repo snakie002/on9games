@@ -1,7 +1,7 @@
 ---
 title: "《鬼武者 Way of the Sword》新手入門：一閃、鬼力與升級系統完全解說"
 description: "從一閃的出手時機到篭手吸收靈魂的升級循環，整理《鬼武者 Way of the Sword》開局最該先搞懂的核心系統。"
-coverImage: post_assets/cover.webp
+coverImage: post_assets/thumbnail-v1.jpg
 date: 2026-09-19
 categories:
   - guide
@@ -14,13 +14,15 @@ factpack: 05-beginner
 verifiedAt: 2026-09-19
 ---
 
-{% gameImage "cover.webp", "鬼武者 Way of the Sword", 460, 215 %}
+{% gameImage "thumbnail-v1.jpg", "鬼武者 Way of the Sword 新手入門", 1920, 1080 %}
 
 《鬼武者 Way of the Sword》由 CAPCOM 開發及發行，於 2026 年 9 月 3 日推出。<!-- C11 -->
 
 它看起來像一款你熟悉的動作遊戲，但只要用「多砍幾下就會贏」的心態開局，很快就會發現自己一直在倒下。這款遊戲的節奏，其實建立在幾個彼此扣連的系統上。
 
-以下整理開局階段最值得先弄懂的部分。
+以下整理開局階段最值得先弄懂的部分。若偏好影片講解，可先看這段繁體中文的戰鬥系統教學：
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DDKTnYevkLY" title="《鬼武者：劍之道》新手戰鬥技巧" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" style="aspect-ratio:16/9;width:100%;max-width:640px;height:auto"></iframe>
 
 ## 一、一閃才是這款遊戲的核心
 
