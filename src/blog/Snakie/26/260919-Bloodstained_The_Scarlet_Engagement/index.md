@@ -35,7 +35,7 @@ categories:
 | 平台 | PS5、Xbox Series X|S、PC（Steam） |
 | Steam | [商店頁面](https://store.steampowered.com/app/1883810/) |
 
-{% gameImage "gameplay.webp", "Bloodstained: The Scarlet Engagement", 1920, 1080, "官方 Steam 遊戲截圖。" %}
+{% gameImage "gameplay.webp", "Bloodstained: The Scarlet Engagement 遊戲畫面", 1600, 900, "官方 Steam 遊戲截圖。" %}
 
 ### TGS 2026 預告片：首次亮相的新系統
 
@@ -51,15 +51,21 @@ categories:
 
 此外，預告片還展示了**連續技（juggle combos）**、**環境攻擊**、新頭目角色，以及回歸的料理與鍛造系統。
 
+{% gameImage "combat.webp", "新系統下的戰鬥場面", 1600, 900, "新系統下的戰鬥場面，可見範圍攻擊與技能特效。" %}
+
 ### 延期至 2027 年
 
 《The Scarlet Engagement》原定於 2026 年發售，但 ArtPlay 聯合創辦人 **Koji Igarashi（IGA）** 於 2026 年 8 月 26 日親自宣佈延期至 2027 年。IGA 在官方影片中表示：「開發已經進入最後階段」，但團隊需要更多時間打磨品質。他補充道：「我們理解這對粉絲來說是令人失望的消息，但開發團隊所有人都在努力讓遊戲達到最佳狀態。」
+
+{% gameImage "exploration.webp", "城堡內部探索場景", 1600, 900, "城堡內部探索場景。" %}
 
 ### 創意總監 Shutaro Iida 離世
 
 值得一提的是，本作的創意總監 **Shutaro Iida（SHUTARO）** 已於 2026 年 2 月 10 日因胰臟癌離世，享年 52 歲。Iida 同時也是《Bloodstained: Ritual of the Night》的核心開發成員，負責企劃與劇情撰寫。IGA 在隨後的聲明中承諾會完成《The Scarlet Engagement》，以紀念 Iida 的願景。
 
 另外，系列御用作曲家 **米光知成（Michiru Yamane）** 也已確認不會回歸負責本作配樂。
+
+{% gameImage "character.webp", "本作主角特寫", 1600, 900, "本作主角特寫。" %}
 
 ### 師傅點睇
 
