@@ -41,7 +41,9 @@ coverImage: "post_assets/thumbnail.jpg"
 
 如果你有Switch 2又喜歡戰棋，這款基本上不用猶豫。
 
-<div class="steam-widget"><iframe src="https://store.steampowered.com/widget/3219710/?utm_source=homepage&utm_campaign=mycampaign" frameborder="0" width="640" height="190" loading="lazy"></iframe></div>
+相關影片：[Fire Emblem: Fortune's Weave — Launch Trailer（Nintendo of America 官方頻道）](https://www.youtube.com/watch?v=kmF38S_0vPs)
+
+更多資訊：[Nintendo eShop](https://www.nintendo.com/us/store/products/fire-emblem-fortunes-weave-switch-2/)｜[Nintendo 官方頁面](https://www.nintendo.com/au/games/nintendo-switch-2/fire-emblem-fortunes-weave/)
 
 ## <u>2. 空之軌跡 the 2nd Trails in the Sky 2nd Chapter</u>
 
@@ -59,6 +61,8 @@ Demo：有
 戰鬥延續前作的迅捷戰鬥與指令戰鬥無縫切換系統，新增了「勇猛突襲」聯合攻擊和更多導力魔法。遊戲內容方面，除了主線劇情大幅擴展之外，還有釣魚、賭場、料理等小遊戲，以及更多可加入隊伍的角色。繁中版由雲豹娛樂負責，品質有保證。
 
 值得一提的是，預購特典包含原作版《英雄傳說 空之軌跡FC》的下載代碼，等於買一送一。如果持有前作《the 1st》的通關資料，還能獲得經典SC風格的服裝道具。
+
+相關影片：[Trails in the Sky 2nd Chapter — Release Date Trailer（GungHo 官方頻道）](https://www.youtube.com/watch?v=hkII_nSxzkc)
 
 {% gameImage "02_trails_2nd_chapter_gameplay_01.webp", "空之軌跡 the 2nd 遊戲畫面", 1280, 720, "官方Steam遊戲截圖：角色在城鎮場景中的對話演出。" %}
 
@@ -79,6 +83,8 @@ Demo：有免費試玩
 
 1.0版本新增了第六個主要可玩派系「Sandshapers」，以及兩個Rogue派系（Order of Zelevas和Severed Claws），加上大量EA期間的修正和平衡調整。Steam目前有50%折扣（約24.99美元），而且通過了Steam Deck驗證。不過要注意的是，這款遊戲已經離開了PC Game Pass，Xbox玩家需要另外購買。
 
+相關影片：[ENDLESS Legend 2 — 1.0 Release Date Trailer（Amplitude Studios 官方頻道）](https://www.youtube.com/watch?v=kVY5V6Xr8Aw)
+
 {% gameImage "03_endless_legend_2_gameplay_01.webp", "ENDLESS Legend 2 遊戲畫面", 1280, 720, "官方Steam遊戲截圖：俯視角的4X策略地圖與城市發展。" %}
 
 <div class="steam-widget"><iframe src="https://store.steampowered.com/widget/3407390/?utm_source=homepage&utm_campaign=mycampaign" frameborder="0" width="640" height="190" loading="lazy"></iframe></div>
@@ -97,6 +103,8 @@ Demo：無
 這款需要特別說明一下。雖然名字裡有「Another Eden」，但這不是手機版的簡單移植——WRIGHT FLYER STUDIOS把Another Eden的第一個主要篇章重新打造成一款獨立的買斷制RPG，完全沒有轉蛋機制，戰鬥系統也經過重新設計。
 
 遊戲的核心是穿越不同時代的劇情冒險，指令式戰鬥加入了技能連鎖系統和「Another Force」連續攻擊機制。可以招募19名角色自由組隊，同伴各自有專屬任務和好感度系統。通關後解鎖New Game+模式，根據選擇不同有超過10種結局。Steam評價目前是「Mixed」（67%好評），主要爭議點在於部分玩家認為定價偏高。
+
+相關影片：[Another Eden Begins — Release Date Trailer（官方頻道）](https://www.youtube.com/watch?v=Yf7hUPSh2cc)
 
 {% gameImage "04_another_eden_begins_gameplay_01.webp", "Another Eden Begins 遊戲畫面", 1280, 720, "官方Steam遊戲截圖：回合制戰鬥中的角色技能演出。" %}
 
