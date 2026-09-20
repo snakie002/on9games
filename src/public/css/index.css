@@ -160,23 +160,60 @@ body {
 
 /* ---- game section media (Phase 4B-3) ---- */
 .post-content figure.game-cover,
-.post-content figure.game-shot {
-	margin: 1.25rem 0;
+.post-content figure.game-shot,
+.post-content figure {
+	margin: 1.25rem auto;
 	max-width: 640px;            /* aligns with Steam widget + lazy-yt width */
 }
 .post-content figure.game-cover img,
-.post-content figure.game-shot img {
+.post-content figure.game-shot img,
+.post-content figure img {
 	display: block;
 	width: 100%;
 	height: auto;                /* width/height attrs reserve the ratio; CSS keeps it responsive */
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: var(--rounded-box, 1rem);
 	background: #000;
 }
-.post-content figure.game-shot figcaption {
+.post-content figure.game-shot figcaption,
+.post-content figure figcaption {
 	margin-top: .4rem;
 	font-size: .85rem;
 	line-height: 1.5;
+	text-align: center;
 	color: hsl(var(--bc) / .7);  /* daisyUI base-content, muted */
+}
+
+/* markdown / direct image centering */
+.post-content .image-with-caption {
+	margin: 1.5rem auto;
+	max-width: 640px;
+	text-align: center;
+}
+.post-content .image-with-caption img {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: var(--rounded-box, 1rem);
+}
+.post-content .image-with-caption .caption {
+	display: block;
+	margin-top: .4rem;
+	font-size: .85rem;
+	line-height: 1.5;
+	text-align: center;
+	color: hsl(var(--bc) / .7);
+}
+.post-content p > img {
+	display: block;
+	margin: 1.25rem auto;
+	max-width: 640px;
+	width: 100%;
+	height: auto;
+	border-radius: var(--rounded-box, 1rem);
 }
 
 /* ---- Steam store widget: responsive, scoped by src (RC pass) ----
