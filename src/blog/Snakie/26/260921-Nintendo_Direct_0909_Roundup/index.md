@@ -23,6 +23,10 @@ coverImage: post_assets/thumbnail.jpg
 
 本次直面會的最大驚喜——全新 2D 密特羅德作品。薩姆斯在預告中以旁白開場，宣告「不是吃掉對方，就是被吃掉」，展示了快節奏的戰鬥、Boss 戰與戲劇性過場動畫。同日推出 Special Edition（含鐵盒 + 黑洞裝甲薩姆斯 amiibo），以及獨立販售的薩姆斯、鳥人民族雕像 amiibo。
 
+{% gameImage "metroid_ravenous_yt.webp", "密特羅德 絕境嗜生 官方預告畫面", 1280, 720, "薩姆斯在全新星球上面對未知外星威脅。" %}
+
+{% gameImage "source_metroid.webp", "密特羅德 絕境嗜生 宣傳圖", 1280, 720, "MercurySteam 開發的全新 2D 密特羅德作品。" %}
+
 {% lazyYouTube "B_QJ4BYIGME", "密特羅德 絕境嗜生 — Nintendo Direct 28:08" %}
 
 ### 星之卡比 躍然世界（Kirby and the World Beyond）
@@ -32,6 +36,8 @@ coverImage: post_assets/thumbnail.jpg
 - **系列週年**：2027 年為星之卡比系列 35 週年
 
 直面會壓軸登場的全新 3D 冒險作品。預告中卡比踏入更廣闊的世界，運用複製能力與變身技巧戰鬥，甚至穿越破碎的世界外牆前往未知區域。任天堂官方描述為「new 3D adventure」，並未使用「開放世界」一詞。
+
+{% gameImage "kirby_world_beyond_yt.webp", "星之卡比 躍然世界 官方預告畫面", 1280, 720, "卡比踏入更加廣闊的 3D 世界。" %}
 
 {% lazyYouTube "tUp_l5taUeY", "星之卡比 躍然世界 – Nintendo Direct 9.9.2026" %}
 
@@ -47,6 +53,8 @@ coverImage: post_assets/thumbnail.jpg
 
 Switch 2 版最大亮點是透過主機內建麥克風支援**語音指令**——直接對救援犬歐慶下達指令（跳躍、集合皮克敏、甚至出聲稱讚）。畫面提升至 4K/60fps，支援雙人合作通關主線。新增「當多慮檢定」模式，每週更新挑戰，計劃提供 72 個關卡。已有 NS 版的玩家可單獨購買升級通行證。
 
+{% gameImage "pikmin4_ns2_yt.webp", "皮克敏 4 Nintendo Switch 2 Edition 官方畫面", 1280, 720, "Switch 2 版支援語音指令操控歐慶。" %}
+
 ### 異度神劍 3 Nintendo Switch 2 Edition
 
 - **平台**：Nintendo Switch 2
@@ -54,6 +62,8 @@ Switch 2 版最大亮點是透過主機內建麥克風支援**語音指令**—�
 - **實體版**：有
 
 強化版新增「英雄寶庫」挑戰模式（連續敵人遭遇戰）以及新英雄「微光」（具備速射攻擊和「預見」能力）。NS 現有玩家可獲得升級包。
+
+{% gameImage "xenoblade3_ns2_yt.webp", "異度神劍 3 Nintendo Switch 2 Edition 官方畫面", 1280, 720, "強化版新增挑戰模式與新英雄。" %}
 
 {% lazyYouTube "a4DiPlQcH_c", "異度神劍 3 Nintendo Switch 2 Edition" %}
 
@@ -64,6 +74,8 @@ Switch 2 版最大亮點是透過主機內建麥克風支援**語音指令**—�
 - **實體版**：鑰匙卡
 
 收錄全部擴充票內容，畫面與幀率強化，同屏敵人數量增加，新增更高難度的「災厄模式」。
+
+{% gameImage "hyrule_warriors_yt.webp", "ZELDA無雙 災厄啟示錄 豪華版 官方畫面", 1280, 720, "收錄全部 DLC 並新增災厄模式。" %}
 
 {% lazyYouTube "F1oeWfFW1Fk", "ZELDA無雙 災厄啟示錄 豪華版 – Nintendo Direct 9.9.2026" %}
 
@@ -109,12 +121,18 @@ Switch 2 版最大亮點是透過主機內建麥克風支援**語音指令**—�
 
 Switch 2 版收錄所有已發布更新內容（含大集會所、《最終幻想14》聯動），支援本機連線與跨平台線上多人。大型 DLC「凌越（Ascendance）」已同步展開製作，預計 2027 年推出。
 
+{% gameImage "monster_hunter_wilds_header.webp", "Monster Hunter Wilds 官方主視覺", 460, 215 %}
+
+{% gameImage "monster_hunter_wilds_ss1.webp", "Monster Hunter Wilds 遊戲畫面", 1280, 720, "Switch 2 版收錄所有更新內容，支援本機連線。" %}
+
 ### FINAL FANTASY VII REVELATION（最終幻想7 啟示錄）
 
 - **平台**：Nintendo Switch 2
 - **發售日**：2027 年 4 月 8 日
 
 FF7 重製三部曲最終章。此外，前傳《Crisis Core –Final Fantasy VII– Reunion》HD 重製版已在 eShop 即日上架，支援全語音（英/日）、強化戰鬥系統與重新編曲配樂。
+
+{% gameImage "ff7_revelation_ss1.webp", "FINAL FANTASY VII REVELATION 遊戲畫面", 1280, 720, "FF7 重製三部曲最終章，2027 年 4 月登場。" %}
 
 {% lazyYouTube "egHsxXxNXLk", "FINAL FANTASY VII REVELATION – Nintendo Direct 9.9.2026" %}
 
@@ -124,6 +142,8 @@ FF7 重製三部曲最終章。此外，前傳《Crisis Core –Final Fantasy VI
 - **發售日**：未定
 
 Atlus 確認登場 Switch 2，但僅展示標誌，未公布發售日期。
+
+{% gameImage "persona6_ss1.webp", "女神異聞錄 6 官方預告畫面", 1280, 720, "Atlus 確認登場 Switch 2，發售日未定。" %}
 
 {% lazyYouTube "iAMM22ZeklA", "Persona 6 – Nintendo Direct 9.9.2026" %}
 
@@ -140,6 +160,10 @@ Atlus 確認登場 Switch 2，但僅展示標誌，未公布發售日期。
 
 收錄兩部已發售擴展包，支援滑鼠操控、動態瞄準、陀螺儀瞄準與觸控螢幕。額外付費擴展「Songs of the Past」預計 2027 年推出。
 
+{% gameImage "witcher3_header.webp", "The Witcher 3: Wild Hunt 官方主視覺", 460, 215 %}
+
+{% gameImage "witcher3_ss1.webp", "The Witcher 3: Wild Hunt Remastered 遊戲畫面", 1280, 720, "重製版收錄兩部擴展包，支援多種操控方式。" %}
+
 ### 超級槍彈辯駁 2×2（Danganronpa 2x2）
 
 - **平台**：Nintendo Switch 2 / Nintendo Switch
@@ -147,27 +171,42 @@ Atlus 確認登場 Switch 2，但僅展示標誌，未公布發售日期。
 
 收錄強化版原版《槍彈辯駁 2》劇情，加上全新故事線——同場景、同角色，但全新受害者、兇手與詭計。
 
+{% gameImage "danganronpa_2x2_ss1.webp", "超級槍彈辯駁 2x2 遊戲畫面", 1280, 720, "收錄強化版原版劇情加上全新故事線。" %}
+
 ### Kingdom Come: Deliverance II Royal Edition
 
 - **平台**：Nintendo Switch 2
 - **類型**：開放世界中世紀動作 RPG
+n{% gameImage "kingdom_come_2_header.webp", "Kingdom Come: Deliverance II 官方主視覺", 460, 215 %}
+
+{% gameImage "kingdom_come_2_ss1.webp", "Kingdom Come: Deliverance II 遊戲畫面", 1280, 720, "15 世紀中世紀歐洲的開放世界動作 RPG。" %}
 
 ### Resident Evil 2 Deluxe Edition / Resident Evil 3 / Resident Evil 4 Gold Edition
 
 - **平台**：Nintendo Switch 2
 - **發售日**：Resident Evil 4 Gold Edition 2026 年 10 月 15 日；其餘待定
 
+{% gameImage "re4_header.webp", "Resident Evil 4 官方主視覺", 460, 215 %}
+
+{% gameImage "re4_ss1.webp", "Resident Evil 4 遊戲畫面", 1280, 720, "經典生存恐怖三部曲同步登陸 Switch 2。" %}
+
 ### 洛克人 Dual Override（Mega Man: Dual Override）
 
 - **平台**：Nintendo Switch 2
 
-### Tomb Raider: Legacy of Atlantis（古墓奇兵：亞特蘭蒂斯之謎）
+{% gameImage "mega_man_ss1.webp", "Mega Man: Dual Override 遊戲畫面", 1280, 720, "洛克人系列全新作品。" %}
+
+### Tomb Raider: Legacy of Atlantis
 
 - **平台**：Nintendo Switch 2
 
 ### METAL SLUG ULTIMATE COLLECTION
 
 - **平台**：Nintendo Switch 2
+
+{% gameImage "tomb_raider_ss1.webp", "Tomb Raider: Legacy of Atlantis 遊戲畫面", 1280, 720, "古墓奇兵系列最新作品。" %}
+
+{% gameImage "metal_slug_ss1.webp", "METAL SLUG ULTIMATE COLLECTION 遊戲畫面", 1280, 720, "經典動作射擊系列合集。" %}
 
 ---
 
@@ -187,6 +226,16 @@ Atlus 確認登場 Switch 2，但僅展示標誌，未公布發售日期。
 | LEGO Batman: Legacy of the Dark Knight | NS2 | — |
 | 漫威星際異攻隊：安可版（Marvel's Guardians of the Galaxy: Encore Edition） | NS2 | 2026.11.5 |
 | Cairn | NS2 | 攀岩模擬 |
+
+{% gameImage "fatal_fury_header.webp", "餓狼傳說 City of the Wolves 官方主視覺", 460, 215 %}
+
+{% gameImage "fatal_fury_ss1.webp", "餓狼傳說 City of the Wolves 遊戲畫面", 1280, 720, "SNK 經典格鬥系列新作。" %}
+
+{% gameImage "eternal_anima_ss1.webp", "ETERNAL ANIMA 永恆的靈漪 遊戲畫面", 1280, 720, "預計 2027 年 3 月推出。" %}
+
+{% gameImage "cairn_header.webp", "Cairn 官方主視覺", 460, 215 %}
+
+{% gameImage "cairn_ss1.webp", "Cairn 遊戲畫面", 1280, 720, "攀登模擬遊戲，征服傳說中的神山。" %}
 | Onyx: The Dark Grip | NS2 | 直面會中亮相 |
 | Stage Fright | NS2 | 直面會中亮相 |
 | Ondeh Ondeh Kaya's Tasty Tale | NS2 | 直面會中亮相 |
