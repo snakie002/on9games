@@ -2,6 +2,7 @@
 title: "Persona 4 Revival 確認2027年2月18日推出 | 女神異聞錄4 重製版 | Steam"
 description: "ATLUS 重製經典JRPG Persona 4 Revival 定檔2027年2月18日，全面升級畫面、戰鬥系統與音樂，登陸 PC Steam / PS5 / Xbox 平台。"
 coverImage: post_assets/thumbnail.jpg
+permalink: /26/260921-Persona_4_Revival/index.html
 ---
 
 # Persona 4 Revival 確認2027年2月18日推出
