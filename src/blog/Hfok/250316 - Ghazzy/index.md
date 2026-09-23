@@ -4,7 +4,6 @@ date: "2025-03-16"
 categories:
   - "le"
   - "news"
-  - ""
 tags:
   - "hfok"
   - ""

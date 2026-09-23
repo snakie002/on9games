@@ -4,7 +4,6 @@ date: "2024-03-24"
 categories:
   - "poe"
   - "poe-news"
-  - ""
 tags:
   - "何師傅"
   - "POE 消息"

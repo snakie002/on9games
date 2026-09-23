@@ -93,13 +93,16 @@ body {
 }
 /* ---- lazy YouTube facade (Phase 4B) ---- */
 /* lazy-youtube.css — reserves the 16:9 box before any image/iframe loads (zero CLS). */
-.lazy-yt {
+.post-content .lazy-yt {
   position: relative;
   display: block;
   width: 100%;
   max-width: 640px;           /* matches the site's existing Steam widget width */
   aspect-ratio: 16 / 9;
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: 0;
   background: #000;
   border-radius: var(--rounded-box, 1rem);
   overflow: hidden;
@@ -162,7 +165,10 @@ body {
 .post-content figure.game-cover,
 .post-content figure.game-shot,
 .post-content figure {
-	margin: 1.25rem auto;
+	margin-top: 1.25rem;
+	margin-right: auto;
+	margin-bottom: 1.25rem;
+	margin-left: 0;
 	max-width: 640px;            /* aligns with Steam widget + lazy-yt width */
 }
 .post-content figure.game-cover img,
@@ -171,7 +177,7 @@ body {
 	display: block;
 	width: 100%;
 	height: auto;                /* width/height attrs reserve the ratio; CSS keeps it responsive */
-	margin-left: auto;
+	margin-left: 0;
 	margin-right: auto;
 	border-radius: var(--rounded-box, 1rem);
 	background: #000;
@@ -181,21 +187,24 @@ body {
 	margin-top: .4rem;
 	font-size: .85rem;
 	line-height: 1.5;
-	text-align: center;
+	text-align: left;
 	color: hsl(var(--bc) / .7);  /* daisyUI base-content, muted */
 }
 
-/* markdown / direct image centering */
+/* markdown / direct images follow the article's left-aligned body flow */
 .post-content .image-with-caption {
-	margin: 1.5rem auto;
+	margin-top: 1.5rem;
+	margin-right: auto;
+	margin-bottom: 1.5rem;
+	margin-left: 0;
 	max-width: 640px;
-	text-align: center;
+	text-align: left;
 }
 .post-content .image-with-caption img {
 	display: block;
 	width: 100%;
 	height: auto;
-	margin-left: auto;
+	margin-left: 0;
 	margin-right: auto;
 	border-radius: var(--rounded-box, 1rem);
 }
@@ -204,12 +213,15 @@ body {
 	margin-top: .4rem;
 	font-size: .85rem;
 	line-height: 1.5;
-	text-align: center;
+	text-align: left;
 	color: hsl(var(--bc) / .7);
 }
 .post-content p > img {
 	display: block;
-	margin: 1.25rem auto;
+	margin-top: 1.25rem;
+	margin-right: auto;
+	margin-bottom: 1.25rem;
+	margin-left: 0;
 	max-width: 640px;
 	width: 100%;
 	height: auto;
@@ -225,6 +237,8 @@ body {
 	width: 100%;
 	max-width: 640px;
 	height: 190px;
+	margin-left: 0;
+	margin-right: auto;
 	border: 0;
 }
 

@@ -4,7 +4,6 @@ date: "2025-06-07"
 categories:
   - "poe"
   - "poe-news"
-  - ""
 tags:
  - "何師傅"
  - "Path of Exile"

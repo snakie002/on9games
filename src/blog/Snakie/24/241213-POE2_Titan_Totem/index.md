@@ -4,7 +4,6 @@ date: "2024-12-13"
 categories:
   - "poe2"
   - "poe2-guide"
-  - ""
 tags:
   - "何師傅"
   - "Path of Exile 2"

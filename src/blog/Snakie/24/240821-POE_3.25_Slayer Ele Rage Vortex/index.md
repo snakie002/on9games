@@ -4,7 +4,6 @@ date: "2024-08-21"
 categories:
   - "poe"
   - "poe-guide"
-  - ""
 tags:
   - "何師傅"
   - "POE 近戰"

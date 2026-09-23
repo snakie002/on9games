@@ -4,7 +4,6 @@ date: "2024-10-12"
 categories:
   - "tli"
   - "news"
-  - ""
 tags:
   - "何師傅"
   - "火炬之光無限"

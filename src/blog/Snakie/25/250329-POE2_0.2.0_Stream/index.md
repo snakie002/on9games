@@ -4,7 +4,6 @@ date: "2025-03-29"
 categories:
   - "poe2"
   - "poe2-news"
-  - ""
 tags:
  - "何師傅"
  - "Path of Exile 2"

@@ -1,0 +1,1359 @@
+{
+  "schema_version": 1,
+  "status": "APPROVED_CANONICAL_ARCHITECTURE__NOT_RUNTIME_ENFORCED",
+  "id_convention": "lowercase ASCII hyphenated stable IDs; display strings are never keys",
+  "limits": {
+    "genres_per_article": 2,
+    "traits_per_article": 3,
+    "primary_games": 5
+  },
+  "contentTypes": [
+    {
+      "id": "news",
+      "display_zh_tw": "遊戲新聞",
+      "display_en": "Game News",
+      "aliases": []
+    },
+    {
+      "id": "guide",
+      "display_zh_tw": "遊戲攻略",
+      "display_en": "Game Guides",
+      "aliases": []
+    },
+    {
+      "id": "analysis",
+      "display_zh_tw": "遊戲分析",
+      "display_en": "Game Analysis",
+      "aliases": []
+    },
+    {
+      "id": "chit-chat",
+      "display_zh_tw": "遊戲雜談",
+      "display_en": "Game Chit-chat",
+      "aliases": []
+    },
+    {
+      "id": "merch",
+      "display_zh_tw": "遊戲週邊",
+      "display_en": "Game Merchandise",
+      "aliases": []
+    }
+  ],
+  "topics": [
+    {
+      "id": "new-game",
+      "display_zh_tw": "新遊戲",
+      "display_en": "New Game",
+      "aliases": [],
+      "allowed_content_types": [
+        "news"
+      ]
+    },
+    {
+      "id": "release-date",
+      "display_zh_tw": "發售日期",
+      "display_en": "Release Date",
+      "aliases": [],
+      "allowed_content_types": [
+        "news"
+      ]
+    },
+    {
+      "id": "trailer",
+      "display_zh_tw": "預告片",
+      "display_en": "Trailer",
+      "aliases": [],
+      "allowed_content_types": [
+        "news"
+      ]
+    },
+    {
+      "id": "update",
+      "display_zh_tw": "更新",
+      "display_en": "Update",
+      "aliases": [],
+      "allowed_content_types": [
+        "news"
+      ]
+    },
+    {
+      "id": "dlc",
+      "display_zh_tw": "下載內容",
+      "display_en": "DLC",
+      "aliases": [],
+      "allowed_content_types": [
+        "news"
+      ]
+    },
+    {
+      "id": "patch",
+      "display_zh_tw": "更新檔",
+      "display_en": "Patch",
+      "aliases": [],
+      "allowed_content_types": [
+        "news"
+      ]
+    },
+    {
+      "id": "event",
+      "display_zh_tw": "活動",
+      "display_en": "Event",
+      "aliases": [],
+      "allowed_content_types": [
+        "news"
+      ]
+    },
+    {
+      "id": "sale",
+      "display_zh_tw": "特價",
+      "display_en": "Sale",
+      "aliases": [],
+      "allowed_content_types": [
+        "news"
+      ]
+    },
+    {
+      "id": "game-introduction",
+      "display_zh_tw": "遊戲介紹",
+      "display_en": "Game Introduction",
+      "aliases": [
+        "intro"
+      ],
+      "allowed_content_types": [
+        "news"
+      ]
+    },
+    {
+      "id": "industry-news",
+      "display_zh_tw": "產業新聞",
+      "display_en": "Industry News",
+      "aliases": [],
+      "allowed_content_types": [
+        "news"
+      ]
+    },
+    {
+      "id": "review",
+      "display_zh_tw": "遊戲評測",
+      "display_en": "Review",
+      "aliases": [],
+      "allowed_content_types": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "comparison",
+      "display_zh_tw": "比較",
+      "display_en": "Comparison",
+      "aliases": [],
+      "allowed_content_types": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "design-analysis",
+      "display_zh_tw": "設計分析",
+      "display_en": "Design Analysis",
+      "aliases": [],
+      "allowed_content_types": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "market-analysis",
+      "display_zh_tw": "市場分析",
+      "display_en": "Market Analysis",
+      "aliases": [],
+      "allowed_content_types": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "retrospective",
+      "display_zh_tw": "回顧",
+      "display_en": "Retrospective",
+      "aliases": [],
+      "allowed_content_types": [
+        "analysis"
+      ]
+    },
+    {
+      "id": "discussion",
+      "display_zh_tw": "討論",
+      "display_en": "Discussion",
+      "aliases": [],
+      "allowed_content_types": [
+        "chit-chat"
+      ]
+    },
+    {
+      "id": "opinion",
+      "display_zh_tw": "觀點",
+      "display_en": "Opinion",
+      "aliases": [],
+      "allowed_content_types": [
+        "chit-chat"
+      ]
+    },
+    {
+      "id": "community",
+      "display_zh_tw": "社群",
+      "display_en": "Community",
+      "aliases": [],
+      "allowed_content_types": [
+        "chit-chat"
+      ]
+    },
+    {
+      "id": "figure",
+      "display_zh_tw": "模型公仔",
+      "display_en": "Figure",
+      "aliases": [],
+      "allowed_content_types": [
+        "merch"
+      ]
+    },
+    {
+      "id": "model-kit",
+      "display_zh_tw": "組裝模型",
+      "display_en": "Model Kit",
+      "aliases": [],
+      "allowed_content_types": [
+        "merch"
+      ]
+    },
+    {
+      "id": "tcg",
+      "display_zh_tw": "集換式卡牌",
+      "display_en": "Trading Card Game",
+      "aliases": [],
+      "allowed_content_types": [
+        "merch"
+      ]
+    },
+    {
+      "id": "hardware",
+      "display_zh_tw": "硬體",
+      "display_en": "Hardware",
+      "aliases": [],
+      "allowed_content_types": [
+        "merch"
+      ]
+    },
+    {
+      "id": "accessory",
+      "display_zh_tw": "配件",
+      "display_en": "Accessory",
+      "aliases": [],
+      "allowed_content_types": [
+        "merch"
+      ]
+    },
+    {
+      "id": "collector-edition",
+      "display_zh_tw": "典藏版",
+      "display_en": "Collector Edition",
+      "aliases": [],
+      "allowed_content_types": [
+        "merch"
+      ]
+    },
+    {
+      "id": "hard-mode-guide",
+      "display_zh_tw": "高難度模式攻略",
+      "display_en": "HARD MODE GUIDE",
+      "aliases": [
+        "HARD MODE GUIDE"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "true-ending-guide",
+      "display_zh_tw": "真結局攻略",
+      "display_en": "TRUE ENDING GUIDE",
+      "aliases": [
+        "TRUE ENDING GUIDE"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "all-endings",
+      "display_zh_tw": "全結局",
+      "display_en": "ALL ENDINGS",
+      "aliases": [
+        "ALL ENDINGS"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "secret-true-final-boss",
+      "display_zh_tw": "隱藏／真最終頭目",
+      "display_en": "SECRET / TRUE FINAL BOSS",
+      "aliases": [
+        "SECRET / TRUE FINAL BOSS"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "final-boss-guide",
+      "display_zh_tw": "最終頭目攻略",
+      "display_en": "FINAL BOSS GUIDE",
+      "aliases": [
+        "FINAL BOSS GUIDE"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "boss-guides",
+      "display_zh_tw": "頭目攻略",
+      "display_en": "BOSS GUIDES",
+      "aliases": [
+        "BOSS GUIDES",
+        "BOSS",
+        "BOSSES",
+        "BOSS GUIDE"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "missable-content",
+      "display_zh_tw": "易錯過內容",
+      "display_en": "MISSABLE CONTENT",
+      "aliases": [
+        "MISSABLE CONTENT"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "trophy-achievement-guide",
+      "display_zh_tw": "獎盃／成就攻略",
+      "display_en": "TROPHY / ACHIEVEMENT GUIDE",
+      "aliases": [
+        "TROPHY / ACHIEVEMENT GUIDE",
+        "ACHIEVEMENTS",
+        "TROPHIES"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "puzzle-solutions",
+      "display_zh_tw": "解謎方法",
+      "display_en": "PUZZLE SOLUTIONS",
+      "aliases": [
+        "PUZZLE SOLUTIONS",
+        "PUZZLES"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "equipment-upgrades",
+      "display_zh_tw": "裝備升級",
+      "display_en": "EQUIPMENT UPGRADES",
+      "aliases": [
+        "EQUIPMENT UPGRADES",
+        "EQUIPMENT"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "best-weapons",
+      "display_zh_tw": "最佳武器",
+      "display_en": "BEST WEAPONS",
+      "aliases": [
+        "BEST WEAPONS"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "weapon-locations",
+      "display_zh_tw": "武器位置",
+      "display_en": "WEAPON LOCATIONS",
+      "aliases": [
+        "WEAPON LOCATIONS"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "best-armour-accessories",
+      "display_zh_tw": "最佳防具／飾品",
+      "display_en": "BEST ARMOUR / ACCESSORIES",
+      "aliases": [
+        "BEST ARMOUR / ACCESSORIES"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "best-party-composition",
+      "display_zh_tw": "最佳隊伍配置",
+      "display_en": "BEST PARTY COMPOSITION",
+      "aliases": [
+        "BEST PARTY COMPOSITION"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "best-builds",
+      "display_zh_tw": "最佳流派",
+      "display_en": "BEST BUILDS",
+      "aliases": [
+        "BEST BUILDS"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "materia-skill-system",
+      "display_zh_tw": "魔晶石／技能系統",
+      "display_en": "MATERIA / SKILL SYSTEM",
+      "aliases": [
+        "MATERIA / SKILL SYSTEM"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "class-subclass-guide",
+      "display_zh_tw": "職業／副職業攻略",
+      "display_en": "CLASS / SUBCLASS GUIDE",
+      "aliases": [
+        "CLASS / SUBCLASS GUIDE"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "companion-recruitment",
+      "display_zh_tw": "夥伴招募",
+      "display_en": "COMPANION RECRUITMENT",
+      "aliases": [
+        "COMPANION RECRUITMENT"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "romance-guide",
+      "display_zh_tw": "戀愛攻略",
+      "display_en": "ROMANCE GUIDE",
+      "aliases": [
+        "ROMANCE GUIDE"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "quest-list-main-story",
+      "display_zh_tw": "任務列表／主線",
+      "display_en": "QUEST LIST / MAIN STORY",
+      "aliases": [
+        "QUEST LIST / MAIN STORY",
+        "SIDE QUESTS"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "collectible-locations",
+      "display_zh_tw": "收集品位置",
+      "display_en": "COLLECTIBLE LOCATIONS",
+      "aliases": [
+        "COLLECTIBLE LOCATIONS",
+        "COLLECTIBLES",
+        "COLLECTIBLE"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "minigame-guides",
+      "display_zh_tw": "小遊戲攻略",
+      "display_en": "MINIGAME GUIDES",
+      "aliases": [
+        "MINIGAME GUIDES"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "beginner-tips",
+      "display_zh_tw": "新手提示",
+      "display_en": "BEGINNER TIPS",
+      "aliases": [
+        "BEGINNER TIPS",
+        "BEGINNER",
+        "BEGINNER GUIDE"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "save-data-carry-over",
+      "display_zh_tw": "存檔／繼承",
+      "display_en": "SAVE DATA / CARRY-OVER",
+      "aliases": [
+        "SAVE DATA / CARRY-OVER"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "difficulty-settings",
+      "display_zh_tw": "難度／設定",
+      "display_en": "DIFFICULTY / SETTINGS",
+      "aliases": [
+        "DIFFICULTY / SETTINGS"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "romance-free-choices",
+      "display_zh_tw": "非戀愛選擇",
+      "display_en": "ROMANCE-FREE CHOICES",
+      "aliases": [
+        "ROMANCE-FREE CHOICES"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "area-chapter-walkthrough",
+      "display_zh_tw": "區域／章節流程",
+      "display_en": "AREA / CHAPTER WALKTHROUGH",
+      "aliases": [
+        "AREA / CHAPTER WALKTHROUGH"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    },
+    {
+      "id": "levelling-farming",
+      "display_zh_tw": "升級／刷取",
+      "display_en": "LEVELLING / FARMING",
+      "aliases": [
+        "LEVELLING / FARMING",
+        "FARMING"
+      ],
+      "allowed_content_types": [
+        "guide"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "id": "adventures-of-elliot",
+      "slug": "adventures-of-elliot",
+      "name_en": "The Adventures of Elliot: The Millennium Tales",
+      "name_zh_tw": "冒險家艾略特的千年奇譚",
+      "display_zh_tw": "冒險家艾略特的千年奇譚",
+      "aliases": [
+        "adventures-of-elliot"
+      ],
+      "franchise_ids": [],
+      "steam_app_id": "3483510",
+      "genre_ids": [],
+      "trait_ids": []
+    },
+    {
+      "id": "baldurs-gate-3",
+      "slug": "baldurs-gate-3",
+      "name_en": "Baldur's Gate 3",
+      "name_zh_tw": "柏德之門 3",
+      "display_zh_tw": "柏德之門 3",
+      "aliases": [
+        "Baldur’s Gate 3",
+        "BG3"
+      ],
+      "franchise_ids": [],
+      "steam_app_id": "1086940",
+      "genre_ids": [
+        "crpg"
+      ],
+      "trait_ids": []
+    },
+    {
+      "id": "final-fantasy-vii-remake",
+      "slug": "final-fantasy-vii-remake",
+      "name_en": "Final Fantasy VII Remake",
+      "name_zh_tw": "Final Fantasy VII Remake",
+      "display_zh_tw": "Final Fantasy VII Remake",
+      "aliases": [
+        "ff7-remake",
+        "FF7 Remake",
+        "FFVII Remake",
+        "最終幻想VII 重製版",
+        "太空戰士VII 重製版"
+      ],
+      "franchise_ids": [
+        "final-fantasy-vii"
+      ],
+      "steam_app_id": "1462040",
+      "genre_ids": [
+        "jrpg",
+        "action-rpg"
+      ],
+      "trait_ids": [
+        "single-player"
+      ]
+    },
+    {
+      "id": "final-fantasy-vii-rebirth",
+      "slug": "final-fantasy-vii-rebirth",
+      "name_en": "Final Fantasy VII Rebirth",
+      "name_zh_tw": "Final Fantasy VII Rebirth",
+      "display_zh_tw": "Final Fantasy VII Rebirth",
+      "aliases": [
+        "ff7-rebirth",
+        "FF7 Rebirth",
+        "FFVII Rebirth",
+        "最終幻想VII 重生",
+        "太空戰士VII 重生"
+      ],
+      "franchise_ids": [
+        "final-fantasy-vii"
+      ],
+      "steam_app_id": "2909400",
+      "genre_ids": [
+        "jrpg",
+        "action-rpg"
+      ],
+      "trait_ids": [
+        "single-player"
+      ]
+    },
+    {
+      "id": "onimusha-way-of-the-sword",
+      "slug": "onimusha-way-of-the-sword",
+      "name_en": "Onimusha: Way of the Sword",
+      "name_zh_tw": "鬼武者 Way of the Sword",
+      "display_zh_tw": "鬼武者 Way of the Sword",
+      "aliases": [
+        "onimusha-wots",
+        "Onimusha",
+        "鬼武者"
+      ],
+      "franchise_ids": [
+        "onimusha"
+      ],
+      "steam_app_id": "2638890",
+      "genre_ids": [
+        "arpg"
+      ],
+      "trait_ids": [
+        "single-player"
+      ]
+    },
+    {
+      "id": "shroom-and-gloom",
+      "slug": "shroom-and-gloom",
+      "name_en": "Shroom and Gloom",
+      "name_zh_tw": null,
+      "display_zh_tw": "Shroom and Gloom",
+      "aliases": [],
+      "franchise_ids": [],
+      "steam_app_id": "3271280",
+      "genre_ids": [],
+      "trait_ids": []
+    },
+    {
+      "id": "dog-in-the-machine",
+      "slug": "dog-in-the-machine",
+      "name_en": "Dog in the Machine",
+      "name_zh_tw": null,
+      "display_zh_tw": "Dog in the Machine",
+      "aliases": [],
+      "franchise_ids": [],
+      "steam_app_id": "4613180",
+      "genre_ids": [],
+      "trait_ids": []
+    },
+    {
+      "id": "gennady",
+      "slug": "gennady",
+      "name_en": "Gennady",
+      "name_zh_tw": null,
+      "display_zh_tw": "Gennady",
+      "aliases": [],
+      "franchise_ids": [],
+      "steam_app_id": "2430010",
+      "genre_ids": [],
+      "trait_ids": []
+    },
+    {
+      "id": "crymelight",
+      "slug": "crymelight",
+      "name_en": "CRYMELIGHT",
+      "name_zh_tw": null,
+      "display_zh_tw": "CRYMELIGHT",
+      "aliases": [],
+      "franchise_ids": [],
+      "steam_app_id": "3891160",
+      "genre_ids": [],
+      "trait_ids": []
+    },
+    {
+      "id": "persona-4-revival",
+      "slug": "persona-4-revival",
+      "name_en": "Persona 4 Revival",
+      "name_zh_tw": null,
+      "display_zh_tw": "Persona 4 Revival",
+      "aliases": [
+        "Persona 4 Revival "
+      ],
+      "franchise_ids": [
+        "persona"
+      ],
+      "steam_app_id": "2963950",
+      "genre_ids": [
+        "jrpg"
+      ],
+      "trait_ids": []
+    },
+    {
+      "id": "mechabellum",
+      "slug": "mechabellum",
+      "name_en": "Mechabellum",
+      "name_zh_tw": null,
+      "display_zh_tw": "Mechabellum",
+      "aliases": [],
+      "franchise_ids": [],
+      "steam_app_id": "669330",
+      "genre_ids": [
+        "strategy"
+      ],
+      "trait_ids": []
+    },
+    {
+      "id": "path-of-exile",
+      "slug": "path-of-exile",
+      "name_en": "Path of Exile",
+      "name_zh_tw": "流亡黯道",
+      "display_zh_tw": "流亡黯道",
+      "aliases": [
+        "POE",
+        "流亡黯道"
+      ],
+      "franchise_ids": [
+        "path-of-exile"
+      ],
+      "steam_app_id": null,
+      "genre_ids": [
+        "arpg"
+      ],
+      "trait_ids": [
+        "multiplayer",
+        "free-to-play",
+        "live-service"
+      ]
+    },
+    {
+      "id": "path-of-exile-2",
+      "slug": "path-of-exile-2",
+      "name_en": "Path of Exile 2",
+      "name_zh_tw": "流亡黯道 2",
+      "display_zh_tw": "流亡黯道 2",
+      "aliases": [
+        "POE2",
+        "流亡黯道2",
+        "流亡黯道 2"
+      ],
+      "franchise_ids": [
+        "path-of-exile"
+      ],
+      "steam_app_id": null,
+      "genre_ids": [
+        "arpg"
+      ],
+      "trait_ids": [
+        "multiplayer",
+        "early-access"
+      ]
+    },
+    {
+      "id": "torchlight-infinite",
+      "slug": "torchlight-infinite",
+      "name_en": "Torchlight: Infinite",
+      "name_zh_tw": "火炬之光：無限",
+      "display_zh_tw": "火炬之光：無限",
+      "aliases": [
+        "TLI",
+        "火炬之光無限"
+      ],
+      "franchise_ids": [
+        "torchlight"
+      ],
+      "steam_app_id": null,
+      "genre_ids": [
+        "arpg"
+      ],
+      "trait_ids": [
+        "multiplayer",
+        "free-to-play",
+        "live-service"
+      ]
+    },
+    {
+      "id": "last-epoch",
+      "slug": "last-epoch",
+      "name_en": "Last Epoch",
+      "name_zh_tw": "最後紀元",
+      "display_zh_tw": "最後紀元",
+      "aliases": [
+        "LE",
+        "最後紀元"
+      ],
+      "franchise_ids": [],
+      "steam_app_id": null,
+      "genre_ids": [
+        "arpg"
+      ],
+      "trait_ids": [
+        "single-player",
+        "multiplayer"
+      ]
+    },
+    {
+      "id": "diablo-iv",
+      "slug": "diablo-iv",
+      "name_en": "Diablo IV",
+      "name_zh_tw": "暗黑破壞神 IV",
+      "display_zh_tw": "暗黑破壞神 IV",
+      "aliases": [
+        "D4",
+        "Diablo 4",
+        "暗黑破壞神4"
+      ],
+      "franchise_ids": [
+        "diablo"
+      ],
+      "steam_app_id": null,
+      "genre_ids": [
+        "arpg"
+      ],
+      "trait_ids": [
+        "multiplayer",
+        "live-service"
+      ]
+    },
+    {
+      "id": "factorio",
+      "slug": "factorio",
+      "name_en": "Factorio",
+      "name_zh_tw": "異星工廠",
+      "display_zh_tw": "異星工廠",
+      "aliases": [
+        "異星工廠"
+      ],
+      "franchise_ids": [],
+      "steam_app_id": null,
+      "genre_ids": [
+        "simulation",
+        "strategy"
+      ],
+      "trait_ids": [
+        "single-player",
+        "multiplayer"
+      ]
+    }
+  ],
+  "franchises": [
+    {
+      "id": "path-of-exile",
+      "display_zh_tw": "流亡黯道",
+      "display_en": "Path of Exile",
+      "aliases": [
+        "POE",
+        "流亡黯道"
+      ]
+    },
+    {
+      "id": "persona",
+      "display_zh_tw": "女神異聞錄",
+      "display_en": "Persona",
+      "aliases": [
+        "Persona"
+      ]
+    },
+    {
+      "id": "final-fantasy-vii",
+      "display_zh_tw": "Final Fantasy VII",
+      "display_en": "Final Fantasy VII",
+      "aliases": [
+        "FF7",
+        "最終幻想VII",
+        "太空戰士VII"
+      ]
+    },
+    {
+      "id": "diablo",
+      "display_zh_tw": "暗黑破壞神",
+      "display_en": "Diablo",
+      "aliases": [
+        "Diablo",
+        "暗黑破壞神"
+      ]
+    },
+    {
+      "id": "torchlight",
+      "display_zh_tw": "火炬之光",
+      "display_en": "Torchlight",
+      "aliases": [
+        "Torchlight",
+        "火炬之光"
+      ]
+    },
+    {
+      "id": "onimusha",
+      "display_zh_tw": "鬼武者",
+      "display_en": "Onimusha",
+      "aliases": [
+        "Onimusha",
+        "鬼武者"
+      ]
+    }
+  ],
+  "genres": [
+    {
+      "id": "jrpg",
+      "display_zh_tw": "日式角色扮演",
+      "display_en": "JRPG",
+      "aliases": [
+        "J-RPG",
+        "Japanese RPG",
+        "日式RPG",
+        "日式 RPG"
+      ]
+    },
+    {
+      "id": "arpg",
+      "display_zh_tw": "ARPG",
+      "display_en": "ARPG",
+      "aliases": []
+    },
+    {
+      "id": "crpg",
+      "display_zh_tw": "電腦角色扮演",
+      "display_en": "CRPG",
+      "aliases": []
+    },
+    {
+      "id": "turn-based-rpg",
+      "display_zh_tw": "回合制角色扮演",
+      "display_en": "Turn-based RPG",
+      "aliases": []
+    },
+    {
+      "id": "action-rpg",
+      "display_zh_tw": "動作角色扮演",
+      "display_en": "Action RPG",
+      "aliases": []
+    },
+    {
+      "id": "srpg",
+      "display_zh_tw": "戰略角色扮演",
+      "display_en": "SRPG",
+      "aliases": []
+    },
+    {
+      "id": "fps",
+      "display_zh_tw": "第一人稱射擊",
+      "display_en": "FPS",
+      "aliases": []
+    },
+    {
+      "id": "tps",
+      "display_zh_tw": "第三人稱射擊",
+      "display_en": "TPS",
+      "aliases": []
+    },
+    {
+      "id": "rts",
+      "display_zh_tw": "即時戰略",
+      "display_en": "RTS",
+      "aliases": []
+    },
+    {
+      "id": "strategy",
+      "display_zh_tw": "策略",
+      "display_en": "Strategy",
+      "aliases": []
+    },
+    {
+      "id": "simulation",
+      "display_zh_tw": "模擬",
+      "display_en": "Simulation",
+      "aliases": []
+    },
+    {
+      "id": "fighting",
+      "display_zh_tw": "格鬥",
+      "display_en": "Fighting",
+      "aliases": []
+    },
+    {
+      "id": "racing",
+      "display_zh_tw": "競速",
+      "display_en": "Racing",
+      "aliases": []
+    },
+    {
+      "id": "survival",
+      "display_zh_tw": "生存",
+      "display_en": "Survival",
+      "aliases": []
+    },
+    {
+      "id": "horror",
+      "display_zh_tw": "恐怖",
+      "display_en": "Horror",
+      "aliases": []
+    },
+    {
+      "id": "roguelike",
+      "display_zh_tw": "Roguelike",
+      "display_en": "Roguelike",
+      "aliases": []
+    },
+    {
+      "id": "metroidvania",
+      "display_zh_tw": "類銀河戰士惡魔城",
+      "display_en": "Metroidvania",
+      "aliases": []
+    },
+    {
+      "id": "mmorpg",
+      "display_zh_tw": "大型多人線上角色扮演",
+      "display_en": "MMORPG",
+      "aliases": []
+    },
+    {
+      "id": "deckbuilder",
+      "display_zh_tw": "牌組構築",
+      "display_en": "Deckbuilder",
+      "aliases": []
+    },
+    {
+      "id": "platformer",
+      "display_zh_tw": "平台動作",
+      "display_en": "Platformer",
+      "aliases": []
+    }
+  ],
+  "traits": [
+    {
+      "id": "single-player",
+      "display_zh_tw": "單人遊戲",
+      "display_en": "Single-player",
+      "aliases": [
+        "sp",
+        "single player"
+      ]
+    },
+    {
+      "id": "multiplayer",
+      "display_zh_tw": "多人遊戲",
+      "display_en": "Multiplayer",
+      "aliases": [
+        "multi"
+      ]
+    },
+    {
+      "id": "co-op",
+      "display_zh_tw": "合作遊戲",
+      "display_en": "Co-op",
+      "aliases": [
+        "coop",
+        "cooperative"
+      ]
+    },
+    {
+      "id": "pvp",
+      "display_zh_tw": "玩家對戰",
+      "display_en": "PvP",
+      "aliases": []
+    },
+    {
+      "id": "indie",
+      "display_zh_tw": "獨立遊戲",
+      "display_en": "Indie",
+      "aliases": []
+    },
+    {
+      "id": "live-service",
+      "display_zh_tw": "持續營運",
+      "display_en": "Live Service",
+      "aliases": []
+    },
+    {
+      "id": "early-access",
+      "display_zh_tw": "搶先體驗",
+      "display_en": "Early Access",
+      "aliases": []
+    },
+    {
+      "id": "free-to-play",
+      "display_zh_tw": "免費遊玩",
+      "display_en": "Free-to-play",
+      "aliases": [
+        "F2P"
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "id": "snakie002",
+      "display_zh_tw": "Snakie002 何師傅",
+      "display_en": "Snakie002",
+      "aliases": [
+        "Snakie",
+        "何師傅"
+      ]
+    },
+    {
+      "id": "hfok",
+      "display_zh_tw": "HFOK",
+      "display_en": "HFOK",
+      "aliases": [
+        "Hfok"
+      ]
+    },
+    {
+      "id": "on9games",
+      "display_zh_tw": "ON9.GAMES 編輯部",
+      "display_en": "ON9.GAMES Editorial",
+      "aliases": [
+        "ON9.GAMES"
+      ]
+    },
+    {
+      "id": "guest",
+      "display_zh_tw": "友情投稿",
+      "display_en": "Guest Contributor",
+      "aliases": [
+        "Others",
+        "Guest"
+      ]
+    }
+  ],
+  "legacyMappings": {
+    "poe": {
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "poe-guide": {
+      "contentType": "guide",
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "poe-news": {
+      "contentType": "news",
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "poe-ls": {
+      "contentType": "guide",
+      "topics": [
+        "best-builds"
+      ],
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "poe-spell": {
+      "contentType": "guide",
+      "topics": [
+        "best-builds"
+      ],
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "poe-range": {
+      "contentType": "guide",
+      "topics": [
+        "best-builds"
+      ],
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "poe-melee": {
+      "contentType": "guide",
+      "topics": [
+        "best-builds"
+      ],
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "poe-summon": {
+      "contentType": "guide",
+      "topics": [
+        "best-builds"
+      ],
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "news": {
+      "contentType": "news"
+    },
+    "guide": {
+      "contentType": "guide"
+    },
+    "intro": {
+      "contentType": "news",
+      "topics": [
+        "game-introduction"
+      ]
+    },
+    "sp": {
+      "traits": [
+        "single-player"
+      ]
+    },
+    "multi": {
+      "traits": [
+        "multiplayer"
+      ]
+    },
+    "indie": {
+      "traits": [
+        "indie"
+      ]
+    },
+    "tli": {
+      "franchises": [
+        "torchlight"
+      ]
+    },
+    "factorio": {
+      "games": [
+        "factorio"
+      ]
+    },
+    "poe2": {
+      "games": [
+        "path-of-exile-2"
+      ],
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "poe2-news": {
+      "contentType": "news",
+      "games": [
+        "path-of-exile-2"
+      ],
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "poe2-guide": {
+      "contentType": "guide",
+      "games": [
+        "path-of-exile-2"
+      ],
+      "franchises": [
+        "path-of-exile"
+      ]
+    },
+    "le": {
+      "games": [
+        "last-epoch"
+      ]
+    },
+    "d4": {
+      "games": [
+        "diablo-iv"
+      ],
+      "franchises": [
+        "diablo"
+      ]
+    },
+    "onimusha-wots": {
+      "games": [
+        "onimusha-way-of-the-sword"
+      ]
+    },
+    "others": {
+      "authors": [
+        "guest"
+      ]
+    }
+  },
+  "subjectTypes": [
+    {
+      "id": "game",
+      "status": "populated"
+    },
+    {
+      "id": "franchise",
+      "status": "populated"
+    },
+    {
+      "id": "company",
+      "status": "reserved-not-populated"
+    },
+    {
+      "id": "platform",
+      "status": "reserved-not-populated"
+    },
+    {
+      "id": "event",
+      "status": "reserved-not-populated"
+    },
+    {
+      "id": "product",
+      "status": "reserved-not-populated"
+    },
+    {
+      "id": "industry-topic",
+      "status": "reserved-not-populated"
+    }
+  ]
+}

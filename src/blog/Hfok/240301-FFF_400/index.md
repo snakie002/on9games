@@ -4,7 +4,6 @@ date: "2024-03-01"
 categories:
   - "factorio"
   - "news"
-  - ""
 tags:
   - "hfok"
   - "Factorio"

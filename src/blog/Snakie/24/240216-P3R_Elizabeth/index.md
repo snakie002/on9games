@@ -4,7 +4,6 @@ date: "2024-02-16"
 categories:
   - "sp"
   - "guide"
-  - ""
 tags:
   - "何師傅"
   - "JRPG"

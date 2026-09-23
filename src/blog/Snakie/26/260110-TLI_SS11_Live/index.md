@@ -4,7 +4,6 @@ date: "2026-01-10"
 categories:
   - "tli"
   - "news"
-  - ""
 tags:
   - "何師傅"
   - "火炬之光無限"

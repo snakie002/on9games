@@ -4,12 +4,21 @@ pagination:
   size: 1
   alias: tag
   filter:
+    # Site machinery, never reader-facing tags. Any addCollection() that returns
+    # an object (categories/games/franchises/topics/authors) MUST be listed here:
+    # tags.njk paginates every collection key, and sortByDateDesc calls .sort(),
+    # which throws on an object. Enforced by tests/tags-collection-denylist.test.js.
     - all
     - post
     - posts
     - tagList
     - recentPosts
+    - featuredPosts
     - categories
+    - games
+    - franchises
+    - topics
+    - authors
   addAllPagesToCollections: true
 layout: layouts/home.njk
 eleventyComputed:

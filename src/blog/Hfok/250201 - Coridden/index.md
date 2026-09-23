@@ -4,7 +4,6 @@ date: "2025-02-01"
 categories:
   - "intro"
   - "multi"
-  - ""
 tags:
   - "hfok"
   - "indie"

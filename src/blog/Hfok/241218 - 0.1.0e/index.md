@@ -4,7 +4,6 @@ date: "2024-12-17"
 categories:
   - "poe2"
   - "poe2-news"
-  - ""
 tags:
   - "hfok"
   - "Path of Exile 2"

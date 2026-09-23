@@ -4,7 +4,6 @@ date: "2024-10-21"
 categories:
   - "factorio"
   - "guide"
-  - ""
 tags:
   - "hfok"
   - "Factorio"
