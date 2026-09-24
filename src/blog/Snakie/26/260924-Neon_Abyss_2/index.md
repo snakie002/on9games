@@ -1,6 +1,6 @@
 ---
 title: "Neon Abyss 2 確認10月8日脫離搶先體驗 | 同步登陸 PS5、Xbox Series、Switch 及 PC | 支援4人連線合作"
-description: "Veewo Games 開發的赛博神話 Roguelike 動作遊戲 Neon Abyss 2 將於 2026 年 10 月 8 日正式發售，同步登陸 PS5、Xbox Series X|S、Nintendo Switch 及 PC Steam，支援最多 4 人連線合作，首日加入 Xbox Game Pass。"
+description: "Veewo Games 開發的賽博神話 Roguelike 動作遊戲 Neon Abyss 2 將於 2026 年 10 月 8 日正式發售，同步登陸 PS5、Xbox Series X|S、Nintendo Switch 及 PC Steam，支援最多 4 人連線合作，首日加入 Xbox Game Pass。"
 coverImage: post_assets/thumbnail.jpg
 permalink: /26/260924-Neon_Abyss_2/index.html
 date: 2026-09-24
@@ -18,7 +18,7 @@ categories:
 
 # Neon Abyss 2 確認10月8日脫離搶先體驗
 
-Veewo Games 開發、Kepler Ghost 發行的赛博神話 Roguelike 動作遊戲 **Neon Abyss 2**，確認將於 **2026 年 10 月 8 日**正式發售，結束長逾一年的 Steam 搶先體驗階段。本作將同步登陸 PlayStation 5、Xbox Series X|S、Nintendo Switch 以及 PC（Steam）平台，並於首日加入 Xbox Game Pass。
+Veewo Games 開發、Kepler Ghost 發行的賽博神話 Roguelike 動作遊戲 **Neon Abyss 2**，確認將於 **2026 年 10 月 8 日**正式發售，結束長逾一年的 Steam 搶先體驗階段。本作將同步登陸 PlayStation 5、Xbox Series X|S、Nintendo Switch 以及 PC（Steam）平台，並於首日加入 Xbox Game Pass。
 
 {% gameImage "header.jpg", "Neon Abyss 2 主視覺", 460, 215, "Neon Abyss 2 官方 Steam 主視覺。" %}
 
@@ -30,9 +30,9 @@ Veewo Games 開發、Kepler Ghost 發行的赛博神話 Roguelike 動作遊戲 *
 
 ## 遊戲概覽
 
-《Neon Abyss 2》是一款横向捲軸的 Roguelike 動作遊戲，以「赛博神話」（Cybermyth）為主題，融合了高速戰鬥、道具連鎖（Synergy）系統與隨機生成的關卡結構。玩家在每次挑戰中需要透過不同的戰鬥方式與道具組合，打造獨特的 Build 來應對層出不窮的敵人與頭目。
+《Neon Abyss 2》是一款橫向捲軸的 Roguelike 動作遊戲，以「賽博神話」（Cybermyth）為主題，融合了高速戰鬥、道具連鎖（Synergy）系統與隨機生成的關卡結構。玩家在每次挑戰中需要透過不同的戰鬥方式與道具組合，打造獨特的 Build 來應對層出不窮的敵人與頭目。
 
-{% gameImage "screenshot_01.jpg", "Neon Abyss 2 遊戲截圖 — 高速戰鬥場面", 1920, 1080, "官方 Steam 遊戲截圖：赛博主題的高速戰鬥場面。" %}
+{% gameImage "screenshot_01.jpg", "Neon Abyss 2 遊戲截圖 — 高速戰鬥場面", 1920, 1080, "官方 Steam 遊戲截圖：賽博主題的高速戰鬥場面。" %}
 
 本作最初於 2025 年 7 月 17 日在 Steam 推出搶先體驗版。經過一年多的持續更新與調整，開發團隊已在搶先體驗期間加入了大量新內容，包括多種戰鬥方式、擴展的道具系統以及新的關卡設計。
 
@@ -53,7 +53,7 @@ Veewo Games 開發、Kepler Ghost 發行的赛博神話 Roguelike 動作遊戲 *
 | 發售日 | 2026 年 10 月 8 日 |
 | 搶先體驗開始 | 2025 年 7 月 17 日 |
 | 類型 | Action、Adventure、Indie、RPG、Roguelike |
-| 平台 | PS5、Xbox Series X|S、Nintendo Switch、PC（Steam） |
+| 平台 | PS5、Xbox Series X\|S、Nintendo Switch、PC（Steam） |
 | 連線合作 | 最多 4 人（Online Co-op） |
 | Xbox Game Pass | 首日加入 |
 | 官方網站 | [neonabyss.com](http://neonabyss.com) |
