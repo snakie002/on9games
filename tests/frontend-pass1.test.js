@@ -64,8 +64,8 @@ test("/type/<id>/ lists that type's articles (contentTypeHubs is populated)", ()
   // characters, so every type hub was empty.
   for (const id of ["news", "guide"]) {
     const html = read("type", id, "index.html");
-    const rows = (html.match(/class="postlist/g) || []).length;
-    assert.ok(rows > 10, `/type/${id}/ lists only ${rows} articles`);
+    const rows = (html.match(/<article class="acard acard-tile"/g) || []).length;
+    assert.ok(rows > 10, `/type/${id}/ lists only ${rows} article cards`);
   }
 });
 

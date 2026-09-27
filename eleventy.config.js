@@ -519,6 +519,21 @@ module.exports = function (eleventyConfig) {
 	}
 	eleventyConfig.addFilter("articleCard", articleCard);
 
+	// Hub chips are derived from the actual listing, never from an empty taxonomy.
+	// The original article order and URLs remain untouched.
+	eleventyConfig.addFilter("hubTypes", (posts) => {
+		const counts = new Map();
+		for (const post of posts || []) {
+			const id = structuredFor(post).contentType;
+			if (TYPE_IDS.includes(id)) counts.set(id, (counts.get(id) || 0) + 1);
+		}
+		return TYPE_IDS.filter((id) => counts.has(id)).map((id) => ({
+			id, label: structured.DISPLAY.contentType[id], count: counts.get(id),
+		}));
+	});
+	eleventyConfig.addFilter("hubSort", (posts) =>
+		[...(posts || [])].sort((a, b) => b.date - a.date));
+
 	/**
 	 * Homepage information architecture. Each article appears at most once:
 	 * featured (editor-curated, featuredPosts.js order) -> latest -> one

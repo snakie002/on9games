@@ -14,6 +14,6 @@ eleventyComputed:
    Automated/editorial articles belong to `on9games` (ON9.GAMES 編輯部), not to
    Snakie002 personally. Legacy articles are attributed from their author
    directory until they carry explicit structured metadata. #}
-{% set postslistTitle = hub.label %}
-{% set postslist = hub.posts %}
-{% include "./_includes/components/postslist.njk" %}
+{% set hubTitle = hub.label %}
+{% set hubPosts = hub.posts %}
+{% include "./_includes/components/hub-listing.njk" %}

@@ -424,6 +424,21 @@ summary.nav-top::after {
 .acard-compact .acard-body { padding: .55rem .75rem; gap: .3rem; }
 .acard-compact .acard-title { font-size: .9rem; -webkit-line-clamp: 2; }
 
-/* ---- legacy list rows (archive / hubs): keep them from overflowing ---- */
+/* ---- 2CDE Pass 2: taxonomy hubs ---- */
+.hub-header { min-width: 0; margin: 0 0 1.5rem; padding: 1.25rem 1.4rem; background: hsl(var(--b1)); border: 1px solid rgb(255 255 255 / .06); border-radius: .9rem; }
+.hub-heading { display: flex; flex-wrap: wrap; align-items: baseline; gap: .5rem .9rem; min-width: 0; }
+.hub-heading h1 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; line-height: 1.4; min-width: 0; max-width: 100%; word-break: normal; overflow-wrap: anywhere; }
+.hub-count { font-size: .9rem; opacity: .7; flex: none; }
+.hub-description { margin-top: .6rem; opacity: .8; }
+.hub-filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.1rem; }
+.hub-filter { padding: .35rem .8rem; font-size: .875rem; border: 1px solid rgb(255 255 255 / .22); border-radius: 999px; background: transparent; cursor: pointer; max-width: 100%; white-space: normal; text-align: left; }
+.hub-filter:hover, .hub-filter[aria-pressed="true"] { background: rgb(255 255 255 / .12); border-color: rgb(255 255 255 / .5); }
+.hub-filter:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
+.hub-card-grid { min-width: 0; }
+.hub-card-grid .acard[hidden] { display: none; }
+.hub-empty { margin-top: 1rem; opacity: .7; }
+@media (max-width: 639px) { .hub-header { padding: 1rem; } }
+
+/* ---- legacy list rows (homepage archive): keep them from overflowing ---- */
 .postlist .card-title h2 { overflow-wrap: anywhere; }
 .postlist img { max-width: 100%; height: auto; }
