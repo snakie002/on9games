@@ -1,0 +1,16 @@
+---
+pagination:
+  data: collections.franchiseHubs
+  size: 1
+  alias: hub
+layout: layouts/home.njk
+eleventyComputed:
+  title: "{{ hub.label }}"
+  permalink: "/franchise/{{ hub.id }}/"
+---
+
+{# PHASE 2D: one hub per canonical FRANCHISE. Game and Franchise are distinct
+   entities: a franchise hub aggregates coverage across its games. #}
+{% set postslistTitle = hub.label %}
+{% set postslist = hub.posts %}
+{% include "./_includes/components/postslist.njk" %}

@@ -1,11 +1,12 @@
 {
   "schema_version": 1,
-  "status": "APPROVED_CANONICAL_ARCHITECTURE__NOT_RUNTIME_ENFORCED",
+  "status": "APPROVED_CANONICAL_ARCHITECTURE__RUNTIME_ENFORCED_PHASE_2C",
   "id_convention": "lowercase ASCII hyphenated stable IDs; display strings are never keys",
   "limits": {
     "genres_per_article": 2,
     "traits_per_article": 3,
-    "primary_games": 5
+    "primary_games": 5,
+    "topics_per_article": 3
   },
   "contentTypes": [
     {

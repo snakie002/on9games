@@ -19,6 +19,14 @@ pagination:
     - franchises
     - topics
     - authors
+    # Phase 2D structured-taxonomy collections. These return objects/arrays of
+    # hub descriptors, not posts, and are rendered by game.njk / franchise.njk /
+    # author.njk instead.
+    - gameHubs
+    - franchiseHubs
+    - authorHubs
+    - contentTypeHubs
+    - unmappedLegacyTerms
   addAllPagesToCollections: true
 layout: layouts/home.njk
 eleventyComputed:

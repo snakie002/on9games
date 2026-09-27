@@ -1,0 +1,19 @@
+---
+pagination:
+  data: collections.authorHubs
+  size: 1
+  alias: hub
+layout: layouts/home.njk
+eleventyComputed:
+  title: "{{ hub.label }}"
+  permalink: "/author/{{ hub.id }}/"
+---
+
+{# PHASE 2D: one hub per canonical author identity.
+
+   Automated/editorial articles belong to `on9games` (ON9.GAMES 編輯部), not to
+   Snakie002 personally. Legacy articles are attributed from their author
+   directory until they carry explicit structured metadata. #}
+{% set postslistTitle = hub.label %}
+{% set postslist = hub.posts %}
+{% include "./_includes/components/postslist.njk" %}

@@ -379,6 +379,100 @@ module.exports = function (eleventyConfig) {
 		return posts;
 	});
 
+	// ── PHASE 2D: structured taxonomy collections ───────────────────────────
+	// Structured metadata is the site's truth. Every article gets it derived
+	// once here (explicit V2 frontmatter, else the approved legacy mapping),
+	// so templates and hubs read one consistent source instead of
+	// re-deriving — and no historical file has to be rewritten.
+	const structured = require("./src/_data/structuredMetadata.js");
+
+	function structuredFor(post) {
+		if (!post.data.__structured) {
+			post.data.__structured = structured.deriveStructuredMetadata({
+				...post.data,
+				page: post.data.page || { inputPath: post.inputPath },
+			});
+		}
+		return post.data.__structured;
+	}
+	eleventyConfig.addFilter("structuredMeta", structuredFor);
+	eleventyConfig.addFilter("derivedBadges", (post) =>
+		structured.deriveBadges(structuredFor(post))
+	);
+	eleventyConfig.addFilter("articleDescription", (post) =>
+		structured.deriveDescription(post.data || post, metadata.description)
+	);
+
+	/** posts grouped by a derived structured field, newest first. */
+	function groupByStructured(collectionApi, field) {
+		const groups = new Map();
+		for (const post of collectionApi.getFilteredByTag("posts")) {
+			const meta = structuredFor(post);
+			const values = field === "author"
+				? [meta.author].filter(Boolean)
+				: meta[field] || [];
+			for (const value of values) {
+				if (!groups.has(value)) groups.set(value, []);
+				groups.get(value).push(post);
+			}
+		}
+		for (const posts of groups.values()) {
+			posts.sort((a, b) => b.date - a.date);
+		}
+		return groups;
+	}
+
+	eleventyConfig.addCollection("gameHubs", (api) => {
+		const groups = groupByStructured(api, "games");
+		return structured.registry.games
+			.filter((game) => groups.has(game.id))
+			.map((game) => ({
+				id: game.id,
+				label: structured.DISPLAY.game[game.id],
+				posts: groups.get(game.id),
+			}));
+	});
+
+	eleventyConfig.addCollection("franchiseHubs", (api) => {
+		const groups = groupByStructured(api, "franchises");
+		return structured.registry.franchises
+			.filter((f) => groups.has(f.id))
+			.map((f) => ({
+				id: f.id,
+				label: structured.DISPLAY.franchise[f.id],
+				posts: groups.get(f.id),
+			}));
+	});
+
+	eleventyConfig.addCollection("authorHubs", (api) => {
+		const groups = groupByStructured(api, "author");
+		// Every canonical author gets a hub, even with no articles yet, so the
+		// route exists the moment the first article is attributed.
+		return structured.registry.authors.map((author) => ({
+			id: author.id,
+			label: structured.DISPLAY.author[author.id],
+			posts: groups.get(author.id) || [],
+		}));
+	});
+
+	eleventyConfig.addCollection("contentTypeHubs", (api) => {
+		const groups = groupByStructured(api, "contentType");
+		return structured.registry.contentTypes.map((type) => ({
+			id: type.id,
+			label: structured.DISPLAY.contentType[type.id],
+			posts: groups.get(type.id) || [],
+		}));
+	});
+
+	/** Unmapped legacy categories, surfaced rather than silently guessed. */
+	eleventyConfig.addCollection("unmappedLegacyTerms", (api) => {
+		const unmapped = new Set();
+		for (const post of api.getFilteredByTag("posts")) {
+			for (const term of structuredFor(post).unmapped) unmapped.add(term);
+		}
+		return [...unmapped].sort();
+	});
+
 	// Features to make your build faster (when you need them)
 
 	// If your passthrough copy gets heavy and cumbersome, add this line
