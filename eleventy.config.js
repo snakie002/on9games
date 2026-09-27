@@ -518,6 +518,13 @@ module.exports = function (eleventyConfig) {
 		};
 	}
 	eleventyConfig.addFilter("articleCard", articleCard);
+	eleventyConfig.addFilter("franchiseDisplay", (id) => structured.DISPLAY.franchise[id] || id);
+	// Resolve the current Eleventy collection item for article layouts, then
+	// rank existing articles without changing URLs, taxonomy or publication state.
+	eleventyConfig.addFilter("articleAtUrl", (posts, url) =>
+		(posts || []).find((entry) => entry.url === url) || null);
+	eleventyConfig.addFilter("relatedArticles", (posts, current, limit = 4) =>
+		require("./lib/related-articles.js")(posts, current, structuredFor, limit));
 
 	// Hub chips are derived from the actual listing, never from an empty taxonomy.
 	// The original article order and URLs remain untouched.
