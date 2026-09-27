@@ -1,0 +1,36 @@
+{#- 2CDE Pass 1: the ONE article card.
+    Input: `post` (an Eleventy collection item), `cardVariant`:
+      "hero"    large featured card (image on top, excerpt)
+      "tile"    grid card (image on top, short excerpt)
+      "row"     list row (image left from md, excerpt)
+      "compact" small side card (thumbnail + title)
+    All data comes from the `articleCard` view-model (existing metadata only).
+    No nested links: image, title, badges and game each link separately. -#}
+{%- set c = post | articleCard -%}
+{%- set v = cardVariant or "tile" -%}
+<article class="acard acard-{{ v }}"{% if c.contentType %} data-type="{{ c.contentType.id }}"{% endif %}>
+  <a class="acard-media" href="{{ c.url | url }}" tabindex="-1" aria-hidden="true">
+    {%- if c.cover %}
+      <img src="{{ c.cover }}" alt="" loading="{{ 'eager' if v == 'hero' else 'lazy' }}" decoding="async">
+    {%- else %}
+      <span class="acard-noimg">on9games</span>
+    {%- endif %}
+  </a>
+  <div class="acard-body">
+    {%- if v != "compact" %}
+    <div class="acard-meta">
+      {%- if c.contentType %}<a class="ct-badge" data-type="{{ c.contentType.id }}" href="{{ c.contentType.url }}">{{ c.contentType.label }}</a>{% endif %}
+      {%- if c.subject %}<a class="acard-subject" href="{{ c.subject.url }}">{{ c.subject.label }}</a>{% endif %}
+    </div>
+    {%- endif %}
+    <h3 class="acard-title"><a href="{{ c.url | url }}">{{ c.title }}</a></h3>
+    {%- if c.description and v != "compact" %}
+    <p class="acard-desc">{{ c.description }}</p>
+    {%- endif %}
+    <div class="acard-foot">
+      {%- if v == "compact" and c.contentType %}<span class="ct-dot" data-type="{{ c.contentType.id }}"></span>{% endif %}
+      <time datetime="{{ c.dateIso }}">{{ c.dateText }}</time>
+      {%- if c.author and v != "compact" %}<span aria-hidden="true">·</span><a class="acard-author" href="{{ c.author.url }}">{{ c.author.label }}</a>{% endif %}
+    </div>
+  </div>
+</article>

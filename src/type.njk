@@ -1,0 +1,23 @@
+---
+pagination:
+  data: collections.contentTypeHubs
+  size: 1
+  alias: hub
+layout: layouts/home.njk
+eleventyComputed:
+  title: "{{ hub.label }}"
+  permalink: "/type/{{ hub.id }}/"
+---
+
+{# 2CDE Pass 1: one listing per canonical CONTENT TYPE (news, guide, analysis,
+   chit-chat, merch). Same pattern and data source as game.njk: membership is
+   derived structured metadata; no article was edited to appear here. A type
+   with no articles yet still gets its page, so the nav never 404s.
+   NOTE: postslist.njk uses the ASYNC `coverimage` shortcode; including it
+   inside an {% if %} silently drops all output, so it stays top-level. #}
+{% set postslistTitle = hub.label %}
+{% set postslist = hub.posts %}
+{% include "./_includes/components/postslist.njk" %}
+{% if not hub.posts.length %}
+<p class="mt-6 text-zinc-400">這個分類暫時未有文章，敬請期待。</p>
+{% endif %}

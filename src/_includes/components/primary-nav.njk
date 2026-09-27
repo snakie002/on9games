@@ -1,0 +1,113 @@
+{#- 2CDE Pass 1 primary navigation (replaces the flat components/category.njk bar).
+    首頁 · 內容 (the five canonical content types, labels from the registry) ·
+    the strategic legacy game menus (PoE / PoE2 / Torchlight / Last Epoch) ·
+    更多遊戲 (largest structured game hubs + legacy single/multi-player).
+    <details> dropdowns open on tap/keyboard everywhere; hover also opens them on
+    desktop. Every legacy /category/ URL the old bar linked is still linked. -#}
+{%- set contentTypes = collections.contentTypeHubs -%}
+{%- set pinnedGames = ["path-of-exile", "path-of-exile-2", "torchlight-infinite", "last-epoch"] -%}
+{%- set moreGames = collections.gameHubs | topGameHubs(pinnedGames, 6) -%}
+
+{%- macro typeLinks(types) -%}
+  {%- for t in types %}
+    <li><a href="/type/{{ t.id }}/" class="nav-type"><span class="ct-dot" data-type="{{ t.id }}"></span>{{ t.label }}</a></li>
+  {%- endfor %}
+{%- endmacro -%}
+
+{%- macro poeLinks() -%}
+    <li><a href="/category/poe/">流亡黯道 全部</a></li>
+    <li><a href="/category/poe-guide/"><img loading="lazy" class="w-5 h-5" src="/assets/img/poe_knowledge.png" alt=""/>POE教學</a></li>
+    <li><a href="/category/poe-news/"><img loading="lazy" class="w-5 h-5" src="/assets/img/poe_news.png" alt=""/>POE消息</a></li>
+    <li><a href="/category/poe-ls/"><img loading="lazy" class="w-5 h-5" src="/assets/img/poe_league_starter.png" alt=""/>POE拓荒精選</a></li>
+{%- endmacro -%}
+
+{%- macro poe2Links() -%}
+    <li><a href="/category/poe2/">流亡黯道2 全部</a></li>
+    <li><a href="/category/poe2-guide/"><img loading="lazy" class="w-5 h-5" src="/assets/img/poe_ninja.png" alt=""/>POE2教學</a></li>
+    <li><a href="/category/poe2-news/"><img loading="lazy" class="w-5 h-5" src="/assets/img/poe_knowledge.png" alt=""/>POE2消息</a></li>
+{%- endmacro -%}
+
+{%- macro moreLinks(games) -%}
+  {%- for g in games %}
+    <li><a href="/game/{{ g.id }}/">{{ g.label }}</a></li>
+  {%- endfor %}
+    <li><a href="/category/sp/"><img loading="lazy" class="w-5 h-5" src="/assets/img/steam.png" alt=""/>單機遊戲</a></li>
+    <li><a href="/category/multi/"><img loading="lazy" class="w-5 h-5" src="/assets/img/multi.png" alt=""/>多人連線</a></li>
+{%- endmacro -%}
+
+<nav class="site-nav bg-primary mb-8 sticky top-0 z-20" aria-label="主選單">
+  <div class="container max-w-[1200px] mx-auto px-2 lg:px-4">
+
+    {#- desktop -#}
+    <ul class="nav-bar hidden lg:flex items-stretch h-[60px] font-bold">
+      <li><a class="nav-top" href="/"><img loading="lazy" class="w-6 h-6" src="/assets/img/favicon.png" alt=""/><span>首頁</span></a></li>
+      <li>
+        <details class="nav-group">
+          <summary class="nav-top"><span>內容</span></summary>
+          <ul class="nav-panel">{{ typeLinks(contentTypes) }}</ul>
+        </details>
+      </li>
+      <li class="nav-divider" aria-hidden="true"></li>
+      <li>
+        <details class="nav-group">
+          <summary class="nav-top"><img loading="lazy" class="w-6 h-6" src="/assets/img/poe.png" alt=""/><span>流亡黯道</span></summary>
+          <ul class="nav-panel">{{ poeLinks() }}</ul>
+        </details>
+      </li>
+      <li>
+        <details class="nav-group">
+          <summary class="nav-top"><img loading="lazy" class="w-6 h-6" src="/assets/img/poe2.png" alt=""/><span>流亡黯道2</span></summary>
+          <ul class="nav-panel">{{ poe2Links() }}</ul>
+        </details>
+      </li>
+      <li><a class="nav-top" href="/category/tli/"><img loading="lazy" class="w-6 h-6" src="/assets/img/torchlight_infinite.png" alt=""/><span>火炬之光無限</span></a></li>
+      <li><a class="nav-top" href="/category/le/"><img loading="lazy" class="w-6 h-6" src="/assets/img/le.png" alt=""/><span>最後紀元</span></a></li>
+      <li>
+        <details class="nav-group">
+          <summary class="nav-top"><span>更多遊戲</span></summary>
+          <ul class="nav-panel nav-panel-right">{{ moreLinks(moreGames) }}</ul>
+        </details>
+      </li>
+    </ul>
+
+    {#- mobile / tablet -#}
+    <details class="nav-mobile lg:hidden">
+      <summary class="nav-mobile-bar">
+        <span class="flex items-center gap-2 font-bold"><img loading="lazy" class="w-6 h-6" src="/assets/img/favicon.png" alt=""/>選單</span>
+        <span class="nav-burger" aria-hidden="true"><span></span><span></span><span></span></span>
+      </summary>
+      <div class="nav-mobile-panel">
+        <ul class="nav-grid"><li><a href="/"><img loading="lazy" class="w-5 h-5" src="/assets/img/favicon.png" alt=""/>首頁</a></li></ul>
+        <p class="nav-heading">內容</p>
+        <ul class="nav-grid">{{ typeLinks(contentTypes) }}</ul>
+        <p class="nav-heading">流亡黯道</p>
+        <ul class="nav-grid">{{ poeLinks() }}</ul>
+        <p class="nav-heading">流亡黯道2</p>
+        <ul class="nav-grid">{{ poe2Links() }}</ul>
+        <p class="nav-heading">遊戲</p>
+        <ul class="nav-grid">
+          <li><a href="/category/tli/"><img loading="lazy" class="w-5 h-5" src="/assets/img/torchlight_infinite.png" alt=""/>火炬之光無限</a></li>
+          <li><a href="/category/le/"><img loading="lazy" class="w-5 h-5" src="/assets/img/le.png" alt=""/>最後紀元</a></li>
+          {{ moreLinks(moreGames) }}
+        </ul>
+      </div>
+    </details>
+  </div>
+</nav>
+<script>
+  // One open desktop dropdown at a time; close on outside click / Escape.
+  document.addEventListener("DOMContentLoaded", function () {
+    var groups = document.querySelectorAll(".nav-group");
+    groups.forEach(function (g) {
+      g.addEventListener("toggle", function () {
+        if (g.open) groups.forEach(function (o) { if (o !== g) o.open = false; });
+      });
+    });
+    document.addEventListener("click", function (e) {
+      groups.forEach(function (g) { if (!g.contains(e.target)) g.open = false; });
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") groups.forEach(function (g) { g.open = false; });
+    });
+  });
+</script>

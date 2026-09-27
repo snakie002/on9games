@@ -197,13 +197,28 @@ test("a game hub aggregates more than one content type", () => {
 test("recentPosts stays deterministic and date-ordered", () => {
   // Read the machine-readable <time datetime> attributes, never prose: article
   // bodies contain Chinese text like "26 年冬季至 2027" that looks like a date.
+  // 2CDE Pass 1: the homepage is sectioned. The curated 精選 block is editor
+  // order by design; every chronological block (最近更新, each content type,
+  // the full archive) must still be newest first, and 最近更新 must start
+  // with the newest article on the site.
   const home = path.join(ROOT, "_site", "index.html");
   const html = fs.readFileSync(home, "utf8");
-  const stamps = [...html.matchAll(/datetime="(\d{4}-\d{2}-\d{2})/g)]
+  const stampsOf = (chunk) => [...chunk.matchAll(/datetime="(\d{4}-\d{2}-\d{2})/g)]
     .map((m) => m[1]);
-  assert.ok(stamps.length > 0, "the homepage must expose machine-readable dates");
-  const sorted = [...stamps].sort().reverse();
-  assert.deepEqual(stamps, sorted, "recent posts must be newest first");
+  const sections = [...html.matchAll(/<section class="home-section[^"]*"[^>]*aria-labelledby="h-([a-z-]+)"[\s\S]*?<\/section>/g)];
+  assert.ok(sections.length > 0, "the homepage must expose its sections");
+  const all = stampsOf(html);
+  assert.ok(all.length > 0, "the homepage must expose machine-readable dates");
+  for (const [chunk, id] of sections) {
+    if (id === "featured") continue;
+    const stamps = stampsOf(chunk);
+    assert.ok(stamps.length > 0, `section ${id} must expose dates`);
+    assert.deepEqual(stamps, [...stamps].sort().reverse(), `section ${id} must be newest first`);
+  }
+  const latest = sections.find((s) => s[1] === "latest");
+  assert.ok(latest, "the homepage must have a 最近更新 section");
+  assert.equal(stampsOf(latest[0])[0], [...all].sort().reverse()[0],
+               "最近更新 must lead with the newest article");
 });
 
 test("data objects are never exposed as tag pages", () => {

@@ -7,35 +7,68 @@ layout: layouts/base.njk
 #  alias: posts
 #permalink: "{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}{% else %}/{% endif %}"
 ---
+{#- 2CDE Pass 1 homepage.
+    精選 (curated, featuredPosts.js) -> 最近更新 -> one section per content type
+    that has content. `homeSections` guarantees each article appears once. The
+    full chronological archive stays below (the existing infinite-scroll list),
+    so no article became harder to reach. -#}
+{%- set sections = collections.posts | homeSections({ featured: 5, latest: 6, perType: 6 }) -%}
 
-{% set postslist = collections.posts | reverse %}
-<div class="flex flex-col lg:flex-row space-x-6">
-  <div class="flex flex-col overflow-hidden">
-    <div class="mb-8">
-      {% include "./_includes/components/carousel.njk" %}
-    </div>
-    {% set postslistTitle = "最近更新" %}
-    {% include "./_includes/components/postslist.njk" %}
-  </div>
-  <div class="min-w-[350px] w-[350px]">
-    <div class="sticky top-20 flex flex-col space-y-6">
-      <div>
-        {% include "./_includes/components/category-list.njk" %}
-      </div>
-      <div>
-        {% set postslistTitle = "最近更新" %}
-        {% set postslist = collections.recentPosts %}
-        {% include "./_includes/components/side-postslist.njk" %}
+<div class="home">
+  {%- if sections.featured.length %}
+  <section class="home-section" aria-labelledby="h-featured">
+    <div class="home-head"><h2 id="h-featured">精選文章</h2></div>
+    <div class="featured-grid">
+      {%- set post = sections.featured[0] %}
+      {%- set cardVariant = "hero" %}
+      <div class="featured-main">{% include "./_includes/components/article-card.njk" %}</div>
+      <div class="featured-side">
+        {%- for post in sections.featured %}{% if not loop.first %}
+          {%- set cardVariant = "compact" %}
+          {% include "./_includes/components/article-card.njk" %}
+        {%- endif %}{% endfor %}
       </div>
     </div>
-  </div>
+  </section>
+  {%- endif %}
+
+  <section class="home-section" aria-labelledby="h-latest">
+    <div class="home-head"><h2 id="h-latest">最近更新</h2></div>
+    <div class="card-grid">
+      {%- for post in sections.latest %}
+        {%- set cardVariant = "tile" %}
+        {% include "./_includes/components/article-card.njk" %}
+      {%- endfor %}
+    </div>
+  </section>
+
+  {%- for section in sections.types %}
+  <section class="home-section" aria-labelledby="h-{{ section.id }}" data-type="{{ section.id }}">
+    <div class="home-head">
+      <h2 id="h-{{ section.id }}"><span class="ct-dot" data-type="{{ section.id }}"></span>{{ section.label }}</h2>
+      <a class="home-more" href="{{ section.url }}">全部{{ section.label }} →</a>
+    </div>
+    <div class="card-grid">
+      {%- for post in section.posts %}
+        {%- set cardVariant = "tile" %}
+        {% include "./_includes/components/article-card.njk" %}
+      {%- endfor %}
+    </div>
+  </section>
+  {%- endfor %}
+
+  <section class="home-section home-archive" aria-labelledby="h-archive">
+    <div class="flex flex-col lg:flex-row lg:gap-8">
+      <div class="flex-1 min-w-0">
+        {% set postslist = collections.posts | reverse %}
+        {% set postslistTitle = "全部文章" %}
+        {% include "./_includes/components/postslist.njk" %}
+      </div>
+      <aside class="w-full lg:w-[320px] lg:shrink-0 mt-10 lg:mt-0">
+        <div class="lg:sticky lg:top-24">
+          {% include "./_includes/components/category-list.njk" %}
+        </div>
+      </aside>
+    </div>
+  </section>
 </div>
-{% block js %}
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var emblaNode = document.querySelector('.embla')
-      var options = { loop: true }
-      var embla = EmblaCarousel(emblaNode, options, [EmblaCarouselAutoplay()])
-    });
-  </script>
-{% endblock %}
