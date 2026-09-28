@@ -14,6 +14,7 @@ const { EleventyHtmlBasePlugin } = require("@11ty/eleventy");
 const pluginDrafts = require("./eleventy.config.drafts.js");
 const pluginImages = require("./eleventy.config.images.js");
 const categories = require("./src/_data/categories.js");
+const { tagPathSegment } = require("./lib/tag-path.js");
 const featuredPosts = require("./src/_data/featuredPosts.js");
 
 module.exports = function (eleventyConfig) {
@@ -138,6 +139,9 @@ module.exports = function (eleventyConfig) {
 		}
 		return Array.from(tagSet);
 	});
+
+	// Safe filesystem/URL segment for a tag page; display text is unchanged.
+	eleventyConfig.addFilter("tagPath", (tag) => tagPathSegment(tag));
 
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
 		return (tags || []).filter(
