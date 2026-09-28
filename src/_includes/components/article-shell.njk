@@ -16,7 +16,7 @@
       {% if articleInfo.author %}<span aria-hidden="true">·</span><a href="{{ articleInfo.author.url }}">{{ articleInfo.author.label }}</a>{% endif %}
     </div>
     {% if tags %}<div class="article-tags" aria-label="標籤">
-      {% for tag in tags | filterTagList %}<a href="/tags/{{ tag }}/">{{ tag }}</a>{% endfor %}
+      {% for tag in tags | filterTagList %}<a href="/tags/{{ tag | tagPath }}/">{{ tag }}</a>{% endfor %}
     </div>{% endif %}
   </header>
   {% if articleInfo.cover %}<figure class="article-figure"><img class="article-cover" src="{{ articleInfo.cover }}" alt="{{ title }}" loading="eager" decoding="async"></figure>{% endif %}
