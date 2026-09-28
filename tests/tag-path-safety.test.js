@@ -62,7 +62,9 @@ test("two different tags may not collapse to the same path", () => {
 test("every tag page and tag link goes through tagPath", () => {
 	const files = [
 		"src/tags.njk",
-		"src/_includes/components/article-shell.njk",
+		"src/_includes/layouts/post.njk",
+		"src/_includes/layouts/post-others.njk",
+		"src/_includes/layouts/post-hfok.njk",
 		"src/_includes/components/tags-list.njk",
 	];
 	for (const f of files) {
@@ -77,17 +79,5 @@ test("game, franchise and author hubs use registry ids that are already safe slu
 	const reg = JSON.parse(fs.readFileSync(path.join(ROOT, "src/_data/contentRegistry.json"), "utf8"));
 	for (const key of ["games", "franchises", "authors"]) {
 		for (const rec of reg[key]) assert.match(rec.id, /^[a-z0-9][a-z0-9-]*$/, `${key}:${rec.id}`);
-	}
-});
-
-test("no template anywhere builds a raw /tags/ path (post-merge guard)", () => {
-	const walk = (d) => fs.readdirSync(d, { withFileTypes: true }).flatMap((e) => {
-		const p = path.join(d, e.name);
-		if (e.isDirectory()) return e.name === "blog" ? [] : walk(p);
-		return /\.(njk|html|js)$/.test(e.name) ? [p] : [];
-	});
-	for (const f of walk(path.join(ROOT, "src"))) {
-		const uses = fs.readFileSync(f, "utf8").match(/\/tags\/\{\{[^}]*\}\}/g) || [];
-		for (const u of uses) assert.match(u, /\|\s*tagPath\s*\}\}/, `${path.relative(ROOT, f)}: ${u}`);
 	}
 });

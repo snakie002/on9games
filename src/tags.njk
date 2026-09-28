@@ -34,6 +34,6 @@ eleventyComputed:
 permalink: /tags/{{ tag | tagPath }}/
 ---
 
-{% set hubTitle = "標籤: " + tag %}
-{% set hubPosts = collections[ tag ] %}
-{% include "./_includes/components/hub-listing.njk" %}
+{% set postslistTitle = "標籤: " + tag %}
+{% set postslist = collections[ tag ] %}
+{% include "./_includes/components/postslist.njk" %}

@@ -12,6 +12,6 @@ eleventyComputed:
 {# PHASE 2D: one hub per canonical GAME, aggregating every content type
    (news, guide, analysis, chit-chat, merch) that covers it. Membership is
    derived from structured metadata, so no article was edited to appear here. #}
-{% set hubTitle = hub.label %}
-{% set hubPosts = hub.posts %}
-{% include "./_includes/components/hub-listing.njk" %}
+{% set postslistTitle = hub.label %}
+{% set postslist = hub.posts %}
+{% include "./_includes/components/postslist.njk" %}

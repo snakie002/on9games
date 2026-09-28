@@ -412,11 +412,9 @@ module.exports = function (eleventyConfig) {
 		const groups = new Map();
 		for (const post of collectionApi.getFilteredByTag("posts")) {
 			const meta = structuredFor(post);
-			// Scalar fields (author, contentType) are single values; iterating
-			// a string would group by its characters. contentTypeHubs was
-			// silently empty until 2CDE Pass 1 first rendered it.
-			const raw = field === "author" ? meta.author : meta[field];
-			const values = Array.isArray(raw) ? raw : [raw].filter(Boolean);
+			const values = field === "author"
+				? [meta.author].filter(Boolean)
+				: meta[field] || [];
 			for (const value of values) {
 				if (!groups.has(value)) groups.set(value, []);
 				groups.get(value).push(post);
@@ -478,113 +476,6 @@ module.exports = function (eleventyConfig) {
 		}
 		return [...unmapped].sort();
 	});
-
-	// ── 2CDE FRONTEND PASS 1: one card view-model + homepage sections ────────
-	// Presentation only. Every value is derived from existing metadata
-	// (structured metadata, coverImage, description, date); nothing is
-	// fabricated and no article file is touched. Filters, not collections, so
-	// tags.njk pagination is unaffected.
-	const TYPE_IDS = structured.registry.contentTypes.map((t) => t.id);
-
-	function coverUrlFor(post) {
-		const file = post.data && post.data.coverImage;
-		const stem = post.filePathStem || (post.page && post.page.filePathStem);
-		if (!file || !stem) return null;
-		const postPath = String(stem).replace("/blog/", "").replace("/index", "");
-		return `${MEDIA_SERVER}/${path.posix.join(postPath, String(file).replace(/\\/g, "/"))}`;
-	}
-
-	function articleCard(post) {
-		const meta = structuredFor(post);
-		const data = post.data || {};
-		const gameId = meta.primaryGames[0] || meta.games[0] || null;
-		const franchiseId = gameId ? null : meta.franchises[0] || null;
-		const date = post.date instanceof Date ? post.date : new Date(post.date);
-		return {
-			url: post.url,
-			title: data.title || "",
-			cover: coverUrlFor(post),
-			description: structured.deriveDescription(
-				{ description: data.description, templateContent: post.templateContent }, ""),
-			dateIso: DateTime.fromJSDate(date, { zone: "utc" }).toFormat("yyyy-LL-dd"),
-			dateText: DateTime.fromJSDate(date, { zone: "utc" }).toFormat("yyyy-LL-dd"),
-			contentType: meta.contentType ? {
-				id: meta.contentType,
-				label: structured.DISPLAY.contentType[meta.contentType],
-				url: `/type/${meta.contentType}/`,
-			} : null,
-			subject: gameId ? { label: structured.DISPLAY.game[gameId], url: `/game/${gameId}/` }
-				: franchiseId ? { label: structured.DISPLAY.franchise[franchiseId],
-				                  url: `/franchise/${franchiseId}/` }
-				: null,
-			author: meta.author ? { label: structured.DISPLAY.author[meta.author],
-			                        url: `/author/${meta.author}/` } : null,
-		};
-	}
-	eleventyConfig.addFilter("articleCard", articleCard);
-	eleventyConfig.addFilter("franchiseDisplay", (id) => structured.DISPLAY.franchise[id] || id);
-	// Resolve the current Eleventy collection item for article layouts, then
-	// rank existing articles without changing URLs, taxonomy or publication state.
-	eleventyConfig.addFilter("articleAtUrl", (posts, url) =>
-		(posts || []).find((entry) => entry.url === url) || null);
-	eleventyConfig.addFilter("relatedArticles", (posts, current, limit = 4) =>
-		require("./lib/related-articles.js")(posts, current, structuredFor, limit));
-
-	// Hub chips are derived from the actual listing, never from an empty taxonomy.
-	// The original article order and URLs remain untouched.
-	eleventyConfig.addFilter("hubTypes", (posts) => {
-		const counts = new Map();
-		for (const post of posts || []) {
-			const id = structuredFor(post).contentType;
-			if (TYPE_IDS.includes(id)) counts.set(id, (counts.get(id) || 0) + 1);
-		}
-		return TYPE_IDS.filter((id) => counts.has(id)).map((id) => ({
-			id, label: structured.DISPLAY.contentType[id], count: counts.get(id),
-		}));
-	});
-	eleventyConfig.addFilter("hubSort", (posts) =>
-		[...(posts || [])].sort((a, b) => b.date - a.date));
-
-	/**
-	 * Homepage information architecture. Each article appears at most once:
-	 * featured (editor-curated, featuredPosts.js order) -> latest -> one
-	 * section per content type that actually has further articles. Empty
-	 * content types produce no section.
-	 */
-	eleventyConfig.addFilter("homeSections", (posts, sizes = {}) => {
-		const seen = new Set();
-		const newest = [...(posts || [])].sort((a, b) => b.date - a.date);
-		const take = (list, n) => {
-			const out = [];
-			for (const post of list) {
-				if (out.length >= n) break;
-				if (seen.has(post.url)) continue;
-				seen.add(post.url);
-				out.push(post);
-			}
-			return out;
-		};
-		const bySlug = new Map(newest.map((p) => [p.fileSlug, p]));
-		const curated = featuredPosts.posts.map((f) => bySlug.get(f.slug))
-			.filter((p) => p && p.data.coverImage);
-		const featured = take(curated, sizes.featured || 5);
-		const latest = take(newest, sizes.latest || 6);
-		const types = TYPE_IDS.map((id) => ({
-			id,
-			label: structured.DISPLAY.contentType[id],
-			url: `/type/${id}/`,
-			posts: take(newest.filter((p) => structuredFor(p).contentType === id),
-			            sizes.perType || 6),
-		})).filter((section) => section.posts.length > 0);
-		return { featured, latest, types };
-	});
-
-	/** Game hubs by article count, excluding ids already pinned in the nav. */
-	eleventyConfig.addFilter("topGameHubs", (hubs, exclude = [], n = 6) =>
-		[...(hubs || [])]
-			.filter((hub) => !exclude.includes(hub.id))
-			.sort((a, b) => b.posts.length - a.posts.length || a.label.localeCompare(b.label))
-			.slice(0, n));
 
 	// Features to make your build faster (when you need them)
 

@@ -1,5 +1,5 @@
 <div class="flex flex-col space-y-1">
-  <h2 id="h-archive" class="text-2xl font-bold">{{ postslistTitle }}</h2>
+  <h1 class="text-2xl font-bold">{{ postslistTitle }}</h1>
   {% set sortedPosts = postslist | sortByDateDesc %}
   {% for post in sortedPosts %}
     <div class="postlist {{ "hidden" if loop.index0 > 10 }}">
@@ -8,10 +8,9 @@
         <div class="flex flex-col lg:flex-row items-start lg:p-1 space-x-4 space-y-4 lg:space-y-0">
           <div>
             <div class="w-full lg:w-72 h-auto rounded">
-              {% set archiveCard = post | articleCard %}
-              {% if archiveCard.cover %}
-                <a href="{{ post.url | url }}" tabindex="-1" aria-hidden="true">
-                  <img src="{{ archiveCard.cover }}" alt="" loading="lazy" decoding="async">
+              {% if post.data.coverImage %}
+                <a href="{{ post.url | url }}">
+                  {% coverimage post,  post.data.title %}
                 </a>
               {% endif %}
             </div>
@@ -22,9 +21,9 @@
             </div>
             <a href="{{ post.url | url }}" class="flex flex-col grow">
               <div class="card-title text-xl">
-                <h3>
+                <h2>
                   <span>{{ post.data.title }}</span>
-                </h3>
+                </h2>
               </div>
               <p class="tracking-wider text-base mt-4 line-clamp-3 hidden lg:block">{{ post.templateContent | excerpt }}</p>
               <time class="mt-4 ml-auto" datetime="{{ post.date | htmlDateString }}">{{ post.date | timeAgo }}</time>

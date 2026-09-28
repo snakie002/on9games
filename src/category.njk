@@ -9,6 +9,6 @@ title: 目錄
 permalink: /category/{{ category }}/
 ---
 
-{% set hubTitle = category | translateCategory %}
-{% set hubPosts = collections.categories[ category ] %}
-{% include "./_includes/components/hub-listing.njk" %}
+{% set postslistTitle = category | translateCategory %}
+{% set postslist = collections.categories[ category ] %}
+{% include "./_includes/components/postslist.njk" %}

@@ -10,7 +10,7 @@
           gtag('config', 'G-RGGL85GTMC');
         </script>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
         {%- set pageTitle = metadata.title if not title else title + " - " + metadata.title %}
         {%- set pageDescription = description or metadata.description %}
         {%- set ogImage = coverImage | assetUrl(page.filePathStem) %}
@@ -40,6 +40,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;600;700&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+        <script src="https://unpkg.com/embla-carousel-autoplay/embla-carousel-autoplay.umd.js"></script>
         <style>{% getBundle "css" %}</style>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1510471331766666"
         crossorigin="anonymous"></script>
@@ -47,20 +49,18 @@
         <link rel="canonical" href="https://on9.games{{ page.url }}">
     </head>
     <body>
-        <a href="#main-content" class="skip-link">跳至主要內容</a>
         <div class="py-8 bg-base-200" id="site">
-            <div class="site-masthead py-4 lg:py-8 px-1 lg:px-4 container max-w-[1200px] mx-auto">
+            <div class="py-4 lg:py-8 px-1 lg:px-4 container max-w-[1200px] mx-auto">
                 {% include "../components/topnav.njk" %}
             </div>
-            {% include "../components/primary-nav.njk" %}
-            <main id="main-content" tabindex="-1" class="container max-w-[1200px] mx-auto px-4">
+            {% include "../components/category.njk" %}
+            <main class="container max-w-[1200px] mx-auto px-4">
                 {{ content | safe }}
             </main>
         </div>
         <!-- Current page: {{ page.url | htmlBaseUrl }} -->
 
         {% block js %}
-          {% if page.url == "/" %}
           <script>
             document.addEventListener('DOMContentLoaded', function () {
               // Postlist infinite scroll
@@ -98,8 +98,7 @@
               };
             });
           </script>
-          {% endif %}
         {% endblock %}
-        {% if "lazy-yt" in content %}<script src="/assets/js/lazy-youtube.js" defer></script>{% endif %}
+        <script src="/assets/js/lazy-youtube.js" defer></script>
     </body>
 </html>
