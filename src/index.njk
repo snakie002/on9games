@@ -15,6 +15,7 @@ layout: layouts/base.njk
 {%- set sections = collections.posts | homeSections({ featured: 5, latest: 6, perType: 6 }) -%}
 
 <div class="home">
+  <h1 class="sr-only">{{ metadata.title }}</h1>
   {%- if sections.featured.length %}
   <section class="home-section" aria-labelledby="h-featured">
     <div class="home-head"><h2 id="h-featured">精選文章</h2></div>

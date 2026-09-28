@@ -5,8 +5,9 @@
 {% set orderedHubPosts = hubPosts | hubSort %}
 {% for post in orderedHubPosts %}
   {% set cardVariant = "tile" %}
+  {% set cardHeadingLevel = 2 %}
   {% include "./article-card.njk" %}
 {% endfor %}
 </div>
 {% if not hubPosts.length %}<p class="hub-empty">這個分類暫時未有文章，敬請期待。</p>{% endif %}
-<script defer src="/assets/js/hub-filters.js"></script>
+{% if (hubPosts | hubTypes).length > 1 %}<script defer src="/assets/js/hub-filters.js"></script>{% endif %}

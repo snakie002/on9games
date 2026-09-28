@@ -12,19 +12,6 @@ body {
 	@apply h-full;
 }
 
-.splide__slide img {
-	width: 100%;
-	height: 100%;
-}
-
-.splide__slide {
-	opacity: 0.4;
-}
-
-.splide__slide.is-active {
-	opacity: 0.8;
-}
-
 .post-content h1,
 .post-content h2,
 .post-content h3 {
@@ -342,7 +329,7 @@ summary.nav-top::after {
 .nav-panel-right { left: auto; right: 0; }
 .nav-panel a, .nav-grid a {
 	display: flex; align-items: center; gap: .55rem;
-	padding: .5rem .7rem; border-radius: .5rem; white-space: nowrap;
+	min-height: 44px; padding: .5rem .7rem; border-radius: .5rem; white-space: nowrap;
 }
 .nav-panel a:hover, .nav-grid a:hover { background: rgb(255 255 255 / .07); }
 @media (hover: hover) and (min-width: 1024px) {
@@ -431,7 +418,7 @@ summary.nav-top::after {
 .hub-count { font-size: .9rem; opacity: .7; flex: none; }
 .hub-description { margin-top: .6rem; opacity: .8; }
 .hub-filters { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.1rem; }
-.hub-filter { padding: .35rem .8rem; font-size: .875rem; border: 1px solid rgb(255 255 255 / .22); border-radius: 999px; background: transparent; cursor: pointer; max-width: 100%; white-space: normal; text-align: left; }
+.hub-filter { min-height: 44px; padding: .35rem .8rem; font-size: .875rem; border: 1px solid rgb(255 255 255 / .22); border-radius: 999px; background: transparent; cursor: pointer; max-width: 100%; white-space: normal; text-align: left; }
 .hub-filter:hover, .hub-filter[aria-pressed="true"] { background: rgb(255 255 255 / .12); border-color: rgb(255 255 255 / .5); }
 .hub-filter:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
 .hub-card-grid { min-width: 0; }
@@ -450,9 +437,9 @@ summary.nav-top::after {
 .article-byline { margin-top: 1rem; font-size: .9rem; color: hsl(var(--bc) / .7); }
 .article-byline a:hover, .article-tags a:hover { text-decoration: underline; }
 .article-tags { margin-top: 1rem; }
-.article-tags a { font-size: .8rem; padding: .2rem .6rem; border-radius: 999px; border: 1px solid hsl(var(--bc) / .28); max-width: 100%; overflow-wrap: anywhere; }
+.article-tags a { display: inline-flex; align-items: center; min-height: 44px; font-size: .8rem; padding: .2rem .6rem; border-radius: 999px; border: 1px solid hsl(var(--bc) / .28); max-width: 100%; overflow-wrap: anywhere; }
 .article-figure { max-width: 960px; margin: 0 auto 2rem; }
-.article-cover { width: 100%; height: auto; max-height: 540px; object-fit: contain; display: block; border-radius: .8rem; background: #080808; }
+.article-cover { aspect-ratio: 16 / 9; width: 100%; height: auto; max-height: 540px; object-fit: contain; display: block; border-radius: .8rem; background: #080808; }
 .article-body { max-width: 760px; margin: 0 auto; min-width: 0; font-size: 1.05rem; line-height: 1.8; }
 .article-body p { margin: 0 0 1.25rem; }
 .article-body h1, .article-body h2, .article-body h3, .article-body h4 { line-height: 1.4; margin-top: 2.2rem; margin-bottom: .75rem; word-break: normal; overflow-wrap: anywhere; }
@@ -472,6 +459,27 @@ summary.nav-top::after {
 .article-related h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; }
 @media (max-width: 639px) { .article-figure { margin-bottom: 1.5rem; } .article-body { font-size: 1rem; } .article-related { margin-top: 2.5rem; } }
 
+/* Keyboard access across navigation, cards and article controls. */
+.skip-link {
+	position: absolute; top: .5rem; left: .5rem; z-index: 100;
+	transform: translateY(-200%); padding: .65rem 1rem;
+	background: hsl(var(--b1)); color: hsl(var(--bc)); border-radius: .5rem;
+}
+.skip-link:focus-visible { transform: none; outline: 3px solid #7dd3fc; outline-offset: 2px; }
+a:focus-visible, button:focus-visible, summary:focus-visible, [role="button"]:focus-visible {
+	outline: 3px solid #7dd3fc; outline-offset: 3px;
+}
+@media (pointer: coarse) {
+	.home-more { display: inline-flex; align-items: center; min-height: 44px; }
+	.acard-meta a { display: inline-flex; align-items: center; min-height: 44px; }
+}
+
+@media (max-width: 639px) {
+	#site { padding-top: .75rem; }
+	.site-masthead { padding-top: .5rem; padding-bottom: .75rem; }
+	.site-nav { margin-bottom: 1.25rem; }
+}
+
 /* ---- legacy list rows (homepage archive): keep them from overflowing ---- */
-.postlist .card-title h2 { overflow-wrap: anywhere; }
+.postlist .card-title h3 { overflow-wrap: anywhere; }
 .postlist img { max-width: 100%; height: auto; }

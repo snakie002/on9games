@@ -98,6 +98,7 @@
   // One open desktop dropdown at a time; close on outside click / Escape.
   document.addEventListener("DOMContentLoaded", function () {
     var groups = document.querySelectorAll(".nav-group");
+    var mobile = document.querySelector(".nav-mobile");
     groups.forEach(function (g) {
       g.addEventListener("toggle", function () {
         if (g.open) groups.forEach(function (o) { if (o !== g) o.open = false; });
@@ -107,7 +108,16 @@
       groups.forEach(function (g) { if (!g.contains(e.target)) g.open = false; });
     });
     document.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") groups.forEach(function (g) { g.open = false; });
+      if (e.key !== "Escape") return;
+      groups.forEach(function (g) {
+        if (!g.open) return;
+        if (g.contains(document.activeElement)) g.querySelector("summary").focus();
+        g.open = false;
+      });
+      if (mobile && mobile.open) {
+        if (mobile.contains(document.activeElement)) mobile.querySelector("summary").focus();
+        mobile.open = false;
+      }
     });
   });
 </script>

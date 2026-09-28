@@ -8,6 +8,7 @@
     No nested links: image, title, badges and game each link separately. -#}
 {%- set c = post | articleCard -%}
 {%- set v = cardVariant or "tile" -%}
+{%- set headingTag = "h2" if cardHeadingLevel == 2 else "h3" -%}
 <article class="acard acard-{{ v }}"{% if c.contentType %} data-type="{{ c.contentType.id }}"{% endif %}>
   <a class="acard-media" href="{{ c.url | url }}" tabindex="-1" aria-hidden="true">
     {%- if c.cover %}
@@ -23,7 +24,7 @@
       {%- if c.subject %}<a class="acard-subject" href="{{ c.subject.url }}">{{ c.subject.label }}</a>{% endif %}
     </div>
     {%- endif %}
-    <h3 class="acard-title"><a href="{{ c.url | url }}">{{ c.title }}</a></h3>
+    <{{ headingTag }} class="acard-title"><a href="{{ c.url | url }}">{{ c.title }}</a></{{ headingTag }}>
     {%- if c.description and v != "compact" %}
     <p class="acard-desc">{{ c.description }}</p>
     {%- endif %}

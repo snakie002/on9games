@@ -10,7 +10,7 @@
           gtag('config', 'G-RGGL85GTMC');
         </script>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         {%- set pageTitle = metadata.title if not title else title + " - " + metadata.title %}
         {%- set pageDescription = description or metadata.description %}
         {%- set ogImage = coverImage | assetUrl(page.filePathStem) %}
@@ -47,18 +47,20 @@
         <link rel="canonical" href="https://on9.games{{ page.url }}">
     </head>
     <body>
+        <a href="#main-content" class="skip-link">跳至主要內容</a>
         <div class="py-8 bg-base-200" id="site">
-            <div class="py-4 lg:py-8 px-1 lg:px-4 container max-w-[1200px] mx-auto">
+            <div class="site-masthead py-4 lg:py-8 px-1 lg:px-4 container max-w-[1200px] mx-auto">
                 {% include "../components/topnav.njk" %}
             </div>
             {% include "../components/primary-nav.njk" %}
-            <main class="container max-w-[1200px] mx-auto px-4">
+            <main id="main-content" tabindex="-1" class="container max-w-[1200px] mx-auto px-4">
                 {{ content | safe }}
             </main>
         </div>
         <!-- Current page: {{ page.url | htmlBaseUrl }} -->
 
         {% block js %}
+          {% if page.url == "/" %}
           <script>
             document.addEventListener('DOMContentLoaded', function () {
               // Postlist infinite scroll
@@ -96,7 +98,8 @@
               };
             });
           </script>
+          {% endif %}
         {% endblock %}
-        <script src="/assets/js/lazy-youtube.js" defer></script>
+        {% if "lazy-yt" in content %}<script src="/assets/js/lazy-youtube.js" defer></script>{% endif %}
     </body>
 </html>
