@@ -1249,6 +1249,9 @@
     "analysis": {
       "contentType": "analysis"
     },
+    "chit-chat": {
+      "contentType": "chit-chat"
+    },
     "intro": {
       "contentType": "news",
       "topics": [

@@ -78,6 +78,12 @@ module.exports = [
 		textColor: "#FFF",
 	},
 	{
+		slug: "chit-chat",
+		name: "遊戲雜談",
+		bgColor: "#059669",
+		textColor: "#FFF",
+	},
+	{
 		slug: "intro",
 		name: "遊戲介紹",
 		bgColor: "#d97706",
