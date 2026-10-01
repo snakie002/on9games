@@ -1252,6 +1252,9 @@
     "chit-chat": {
       "contentType": "chit-chat"
     },
+    "merch": {
+      "contentType": "merch"
+    },
     "intro": {
       "contentType": "news",
       "topics": [

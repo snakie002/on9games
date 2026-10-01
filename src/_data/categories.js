@@ -84,6 +84,12 @@ module.exports = [
 		textColor: "#FFF",
 	},
 	{
+		slug: "merch",
+		name: "遊戲週邊",
+		bgColor: "#db2777",
+		textColor: "#FFF",
+	},
+	{
 		slug: "intro",
 		name: "遊戲介紹",
 		bgColor: "#d97706",
