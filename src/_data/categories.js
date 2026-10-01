@@ -72,6 +72,12 @@ module.exports = [
 		textColor: "#FFF",
 	},
 	{
+		slug: "analysis",
+		name: "遊戲分析",
+		bgColor: "#7c3aed",
+		textColor: "#FFF",
+	},
+	{
 		slug: "intro",
 		name: "遊戲介紹",
 		bgColor: "#d97706",
