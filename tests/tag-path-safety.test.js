@@ -69,9 +69,12 @@ test("every tag page and tag link goes through tagPath", () => {
 	];
 	for (const f of files) {
 		const src = fs.readFileSync(path.join(ROOT, f), "utf8");
-		const uses = src.match(/\/tags\/\{\{[^}]*\}\}/g) || [];
+		const uses = [
+			...(src.match(/\/tags\/\{\{[^}]*\}\}/g) || []),
+			...(src.match(/"\/tags\/"\s*\+\s*\([^)]*\)/g) || []),
+		];
 		assert.ok(uses.length > 0, `${f} has no tag path`);
-		for (const u of uses) assert.match(u, /\|\s*tagPath\s*\}\}/, `${f}: ${u}`);
+		for (const u of uses) assert.match(u, /\|\s*tagPath\s*(\|\s*safe\s*)?(\}\}|\))/, `${f}: ${u}`);
 	}
 });
 
