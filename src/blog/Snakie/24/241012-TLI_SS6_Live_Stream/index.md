@@ -44,7 +44,7 @@ Any肥 希望可以幫到有興趣了解火炬之光無限SS6 畫中雪原的朋
 
 
 
-[原文連結](https://on9.games/241012-TLI_SS6_Live_Stream/)：  
+[原文連結](https://on9.games/24/241012-TLI_SS6_Live_Stream/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 

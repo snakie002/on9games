@@ -33,7 +33,7 @@ Torchlight Infinite火炬之光無限 SS11 渴血症經已推出三星期，
 希望可以幫到有興趣的觀眾朋友們！
 
 
-[原文連結](on9.games/260208-TLI_SS11_21_Showcase)：  
+[原文連結](https://on9.games/26/260208-TLI_SS11_21_Showcase/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 為方便閱讀，將會有大量貼圖方便查閱，
@@ -46,7 +46,7 @@ Torchlight Infinite火炬之光無限 SS11 渴血症經已推出三星期，
 
 ## <u>所需詞綴及注意事項</u>
 
-整體運作原理不再作重覆解釋，有興趣的朋友們可到[這裡](on9.games/260124-TLI_SS11_Cicada_Shell)看幽邃版本
+整體運作原理不再作重覆解釋，有興趣的朋友們可到[這裡](https://on9.games/26/260124-TLI_SS11_Cicada_Shell/)看幽邃版本
 
 ![](post_assets/E0.png)
 
@@ -193,7 +193,7 @@ topic:
 【火炬之光：無限】分身靈爆斬畢業紀錄！貓三九十大抗蟬銳雙虹深空游泳 | 附三星廿一層小技巧片段 | 詳細機體配置解說 | SS11 渴血症 Torchlight:Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/260208-TLI_SS11_21_Showcase
+https://on9.games/26/260208-TLI_SS11_21_Showcase/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

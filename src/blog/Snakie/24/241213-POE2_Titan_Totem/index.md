@@ -34,7 +34,7 @@ coverImage: "post_assets/thumbnail.jpg"
 希望可以幫到有興趣了解泰坦雙持雙手雙天賦的朋友們！
 
 
-[原文連結](on9.games/241213-POE2_Titan_Totem)：  
+[原文連結](https://on9.games/24/241213-POE2_Titan_Totem/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 

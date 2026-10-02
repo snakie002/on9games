@@ -50,7 +50,7 @@ SS11 渴血症將於01月16日正式上線
 Any肥 希望可以幫到有興趣了解火炬之光無限SS11渴血症的朋友們！
 
 
-[原文連結](https://on9.games/260110-TLI_SS11_Live/)：  
+[原文連結](https://on9.games/26/260110-TLI_SS11_Live/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 
@@ -141,7 +141,7 @@ topic:
 【火炬之光：無限】SS11 渴血症直播前瞻懶人包 全新UI正式上架 | 傳奇詞綴打造回歸 | 新特性 貓三 尋仇之刺 | 火炬烙印登場 | 異界玩法全進化 | Torchlight: Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/260110-TLI_SS11_Live/
+https://on9.games/26/260110-TLI_SS11_Live/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

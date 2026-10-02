@@ -32,7 +32,7 @@ Torchlight Infinite火炬之光無限SS7宿命塔羅經已推出一星期，這�
 
 
 
-[原文連結](on9.games/250118-TLI_SS7_Rehan_StrengthStack)：  
+[原文連結](https://on9.games/25/250118-TLI_SS7_Rehan_StrengthStack/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 為方便閱讀，將會有大量貼圖方便查閱，
@@ -211,7 +211,7 @@ topic:
 【火炬之光：無限】無限距離 無限爆裂！狂人千力泥頭電單車 輕鬆暢遊幽邃時刻 | Rehan Strength Stack Build | 無T0及貴價傳奇 | SS7 宿命塔羅 Torchlight:Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/250118-TLI_SS7_Rehan_StrengthStack/
+https://on9.games/25/250118-TLI_SS7_Rehan_StrengthStack/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

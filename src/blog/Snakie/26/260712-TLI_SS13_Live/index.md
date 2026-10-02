@@ -35,7 +35,7 @@ Torchlight Infinite火炬之光無限 SS13 守夜人將於7月17日正式上市�
 Any 肥希望可以幫到有興趣了解 SS13 守夜人的觀眾朋友們！
 
 
-[原文連結](on9.games/260712-TLI_SS13_Live)：  
+[原文連結](https://on9.games/26/260712-TLI_SS13_Live/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 為方便閱讀，將會有大量貼圖方便查閱，
@@ -117,7 +117,7 @@ topic:
 【火炬之光：無限】SS12 明月狂想曲直播前瞻懶人包 三週年紀念鈔真金再現 | 召喚模組 靈藥系統登場 | 新英雄 藥劑師賽琪 | 槍二性轉 法術爆裂 | Torchlight: Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/260411-TLI_SS12_Live/
+https://on9.games/26/260411-TLI_SS12_Live/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

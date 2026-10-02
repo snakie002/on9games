@@ -32,7 +32,7 @@ coverImage: "post_assets/thumbnail.jpg"
 那我們開始懶人包吧：
 
 
-[原文連結](on9.games/250329-POE2_0.2.0_Stream)：  
+[原文連結](https://on9.games/25/250329-POE2_0.2.0_Stream/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 
@@ -137,7 +137,7 @@ topic:
 【POE2】0.2.0 Dawn of the Hunt 狩獵黎明懶人包 | 女獵手 X 五大新昇華 | 100+新技能裝備 | 流亡黯道2 遊戲攻略 | Path of Exile 2
 
 本影片文字補完請到以下連結:
-https://on9.games/250329-POE2_0.2.0_Stream
+https://on9.games/25/250329-POE2_0.2.0_Stream/
 
 00:00 – 前言
 00:58 – 新職業 - 女獵手 Huntress

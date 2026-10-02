@@ -27,15 +27,15 @@ coverImage: "post_assets/thumbnail.jpg"
 
 大家好 又是我 Snakie 何師傅
 
-[上次跟大家分享的流派](on9.games/241218-POE2_Titan_Endgame)
+[上次跟大家分享的流派](https://on9.games/24/241218-POE2_Titan_Endgame/)
 上市不久後就被小量削弱，打圖爆炸問題受到影響，導致流派清圖能力受損，經過部份微調後得而改善，改用別的方法即可，希望可以幫到有需要的朋友們
 
 
-[原文連結](on9.games/241221-POE2_Titan_Fullscreen)：  
+[原文連結](https://on9.games/24/241221-POE2_Titan_Fullscreen/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 
-這文章必須同時收看[上次跟大家分享的流派](on9.games/241218-POE2_Titan_Endgame)才可一拼使用，切記！
+這文章必須同時收看[上次跟大家分享的流派](https://on9.games/24/241218-POE2_Titan_Endgame/)才可一拼使用，切記！
 
 ## <u> 天賦樹 </u>
 ![](post_assets/P1.PNG)
@@ -73,7 +73,7 @@ topic:
 【POE2】踐踏爆炸外別的選擇 泰坦全屏普攻教學 | Hotfix後另一選擇 | 流亡黯道2 遊戲攻略 | Path of Exile 2
 
 本影片文字補完請到以下連結:
-https:/on9.games/241221-POE2_Titan_Fullscreen
+https://on9.games/24/241221-POE2_Titan_Fullscreen/
 
 00:00 – 更新後踐踏體感
 01:24 - 換上普攻後的體感

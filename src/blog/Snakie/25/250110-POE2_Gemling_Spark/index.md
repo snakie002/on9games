@@ -31,7 +31,7 @@ coverImage: "post_assets/thumbnail.jpg"
 
 希望可以幫到有興趣了解古靈電球的朋友們！
 
-[原文連結](on9.games/250110-POE2_Gemling_Spark)：  
+[原文連結](https://on9.games/25/250110-POE2_Gemling_Spark/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 
@@ -167,7 +167,7 @@ topic:
 【POE2】大軍大法師 X 裂痕獵人 古靈鰥寡之托大法師電球 | Gemling Widowhail Spark | 箭袋門檻計算解說 | 流亡黯道2 遊戲攻略 | Path of Exile 2
 
 本影片文字補完請到以下連結:
-https://on9.games/250110-POE2_Gemling_Spark
+https://on9.games/25/250110-POE2_Gemling_Spark/
 
 00:00 – 前言
 01:33 – 地圖部份 - 機體介紹

@@ -31,7 +31,7 @@ Torchlight Infinite火炬之光無限 SS10 疊界經已推出一個月，這次�
 回到影片主題，以傳統新英雄特性起手的師傅，頭兩三天也是賓二閃電鏈起手，到了中間要換裝備，就知道有些事情是不能勉強，原來真的會買不起，所以立馬轉入中路，想玩一下一直都想嘗試的傳奇項鍊，淬火之鳥的頸鍊，這季更新後技能更能夠法術迸發的屏障爆裂，一轉到炸盾後已經能夠輕鬆8-2，換點裝備就能夠自走幽邃羅盤，流派成長曲線順滑可以說是師傅拓荒上頭三位的爽快流派，希望可以幫到有興趣了解全屏月華斬的觀眾朋友們！
 
 
-[原文連結](on9.games/251017-TLI_SS10_Necklace_of_Firebird)：  
+[原文連結](https://on9.games/25/251017-TLI_SS10_Necklace_of_Firebird/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 為方便閱讀，將會有大量貼圖方便查閱，
@@ -136,7 +136,7 @@ topic:
 【火炬之光：無限】屏障爆裂！ 賓二完美自走 輕鬆時刻8-2直上U8幽邃羅盤 | Pin Firebird Build | 附入門版及幽邃版本 | SS10 疊界 Torchlight:Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/251017-TLI_SS10_Necklace_of_Firebird
+https://on9.games/25/251017-TLI_SS10_Necklace_of_Firebird/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

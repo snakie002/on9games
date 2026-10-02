@@ -32,7 +32,7 @@ Torchlight Infinite火炬之光無限 SS12 明月狂想曲已經開季一個星�
 秉承辦法總比困難多的傳統，平價法術迸發體系這套配置造價親民，輕鬆應付 U8 難度，最主要是弄好了就開跑，解放雙手爽度爆錶，儘管爆樁了還有大量提升空間，所以特意分享一下這流派，希望可以幫到有興趣了解藥娘迸發五彩魔矢的觀眾朋友們！
 
 
-[原文連結](https://on9.games/260424-TLI_SS12_Chromatic_Shot)：  
+[原文連結](https://on9.games/26/260424-TLI_SS12_Chromatic_Shot/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 為方便閱讀，將會有大量貼圖方便查閱，
@@ -176,7 +176,7 @@ topic:
 【火炬之光：無限】SS12 爆樁！迸發虎嘯五彩魔矢！ | 平價起手 完美自走 | 震懾解說及流派架構解說 | Sage Chromatic Shot | SS12 明月狂想曲 Torchlight:Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/260424-TLI_SS12_Chromatic_Shot
+https://on9.games/26/260424-TLI_SS12_Chromatic_Shot/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

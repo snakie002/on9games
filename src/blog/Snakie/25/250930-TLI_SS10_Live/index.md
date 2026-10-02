@@ -50,7 +50,7 @@ SS10 疊界將於10月11日正式上線
 Any肥 希望可以幫到有興趣了解火炬之光無限SS10疊界的朋友們！
 
 
-[原文連結](https://on9.games/250930-TLI_SS10_Live/)：  
+[原文連結](https://on9.games/25/250930-TLI_SS10_Live/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 
@@ -138,7 +138,7 @@ topic:
 【火炬之光：無限】SS10 疊界直播前瞻懶人包 | 新手入坑即送兩契靈 | 新特性 賓二 創想鬼才 | 章節過後解放雙手 全民觸媒靜止 | 魂燭及新神體系 移除 | Torchlight: Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/250930-TLI_SS10_Live/
+https://on9.games/25/250930-TLI_SS10_Live/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

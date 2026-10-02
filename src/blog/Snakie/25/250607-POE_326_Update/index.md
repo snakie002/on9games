@@ -40,7 +40,7 @@ coverImage: "post_assets/thumbnail.jpg"
 那我們開始懶人包吧：
 
 
-[原文連結](on9.games/250607-POE_326_Update)：  
+[原文連結](https://on9.games/25/250607-POE_326_Update/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 
@@ -101,7 +101,7 @@ topic:
 POE】POE 3.26 更新速報 輿圖之奧秘 X  Mercenaries 聯盟懶人包 | 全新三大巔峰頭目登場 | 全民幻化守衛 傭兵系統 | 夠Juicy不夠吸引 |流亡黯道 遊戲攻略 | Path of Exile
 
 本影片文字補完請到以下連結:
-https://on9.games/250607-POE_326_Update
+https://on9.games/25/250607-POE_326_Update/
 
 00:00 – 前言
 00:50 – 輿圖之奧秘簡介

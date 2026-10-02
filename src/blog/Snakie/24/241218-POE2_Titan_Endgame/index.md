@@ -31,7 +31,7 @@ coverImage: "post_assets/thumbnail.jpg"
 
 希望可以幫到有興趣了解泰坦踐踏爆炸及圖騰的朋友們！
 
-[原文連結](on9.games/241218-POE2_Titan_Endgame)：  
+[原文連結](https://on9.games/24/241218-POE2_Titan_Endgame/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 
@@ -182,7 +182,7 @@ topic:
 【POE2】一鍵清圖 輕鬆巔峰頭目 泰坦踐踏爆炸圖騰雙天賦 | Titan Stampede X Totem All Content | 魔力命中格擋問題解決 | 流亡黯道2 遊戲攻略 | Path of Exile 2
 
 本影片文字補完請到以下連結:
-https://on9.games/241218-POE2_Titan_Endgame
+https://on9.games/24/241218-POE2_Titan_Endgame/
 
 00:00 – 爆爆佢先
 01:17 – 地圖部份 - 機體展示

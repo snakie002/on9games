@@ -43,7 +43,7 @@ Any肥 希望可以幫到有興趣了解火炬之光無限SS7宿命塔羅的朋�
 
 
 
-[原文連結](https://on9.games/250105-TLI_SS7_Live/)：  
+[原文連結](https://on9.games/25/250105-TLI_SS7_Live/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 
@@ -113,7 +113,7 @@ topic:
 【火炬之光：無限】SS7 新賽季宿命塔羅直播前瞻懶人包 | 新英雄魔靈駕駛員 | 性轉狂人雷恩變雷凱欣 | 同時配置戰鬥及掉落契靈 | Torchlight: Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/250105-TLI_SS7_Live/
+https://on9.games/25/250105-TLI_SS7_Live/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

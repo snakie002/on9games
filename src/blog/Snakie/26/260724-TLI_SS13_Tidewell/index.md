@@ -28,7 +28,7 @@ coverImage: "post_assets/thumbnail.jpg"
 雖然原則上能夠爆樁，但遊戲體驗與成長曲線都很一般，是貴而不強的系列。不玩也玩了，影片還是要出的，所以特意分享一下這流派，希望可以幫到有興趣了解人魚二噴泉的觀眾朋友們！
 
 
-[原文連結](https://on9.games/260724-TLI_SS13_Tidewell)：  
+[原文連結](https://on9.games/26/260724-TLI_SS13_Tidewell/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 為方便閱讀，將會有大量貼圖方便查閱，
@@ -164,7 +164,7 @@ topic:
 【火炬之光：無限】SS12 爆樁！迸發虎嘯五彩魔矢！ | 平價起手 完美自走 | 震懾解說及流派架構解說 | Sage Chromatic Shot | SS12 明月狂想曲 Torchlight:Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/260424-TLI_SS12_Chromatic_Shot
+https://on9.games/26/260424-TLI_SS12_Chromatic_Shot/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

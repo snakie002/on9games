@@ -33,7 +33,7 @@ Torchlight Infinite火炬之光無限 SS12 明月狂想曲已經開季快三個�
 
 
 
-[原文連結](https://on9.games/260507-TLI_SS12_Whirlwind_21)：  
+[原文連結](https://on9.games/26/260507-TLI_SS12_Whirlwind_21/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 為方便閱讀，將會有大量貼圖方便查閱，
@@ -183,7 +183,7 @@ topic:
 【火炬之光：無限】SS12 全屏旋風斬貫注畢業｜硬扛21層 九紅深空亂走｜良好成長曲線冷門流派｜Sage Whirlwind Guide｜SS12 明月狂想曲 Torchlight: Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/260507-TLI_SS12_Whirlwind_21
+https://on9.games/26/260507-TLI_SS12_Whirlwind_21/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

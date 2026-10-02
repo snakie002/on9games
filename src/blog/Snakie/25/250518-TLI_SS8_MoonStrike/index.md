@@ -35,7 +35,7 @@ Torchlight Infinite火炬之光無限 兩週年版本沙海大亨經已推出一
 也算是對月華斬有交代，流派非常爽快，也還有一定的提升空間，特別分享給各位觀眾朋友們，希望可以幫到有興趣了解全屏月華斬的觀眾朋友們！
 
 
-[原文連結](on9.games/250518-TLI_SS8_MoonStrike)：  
+[原文連結](https://on9.games/25/250518-TLI_SS8_MoonStrike/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 為方便閱讀，將會有大量貼圖方便查閱，
@@ -257,7 +257,7 @@ topic:
 【火炬之光：無限】月華斬完夢！ 月三全屏自走月華斬 | Blasphemer Moon Strike | 三星巔峰 五十萬生存暢遊深空 | 不綁定池中鳥瓶中碟 | SS8 沙海大亨 Torchlight:Infinite
 
 本影片文字補完請到以下連結:
-https://on9.games/250518-TLI_SS8_MoonStrike
+https://on9.games/25/250518-TLI_SS8_MoonStrike/
 
 何師傅專屬連結 立即下載享受遊戲！
 https://tap.io/Ov9pfuxY

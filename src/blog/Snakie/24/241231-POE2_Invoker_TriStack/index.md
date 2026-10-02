@@ -33,7 +33,7 @@ coverImage: "post_assets/thumbnail.jpg"
 
 ![](post_assets/1.jpg)
 
-[原文連結](on9.games/241231-POE2_Invoker_TriStack)：  
+[原文連結](https://on9.games/24/241231-POE2_Invoker_TriStack/)：  
 
 圖片只在Blog上提供，不便之處敬請留意！
 
@@ -290,7 +290,7 @@ topic:
 【POE2】打不到就加入 武憎囚神杵智行之手照撐稀有度 | Invoker Rarity Tri-Stack  | 古靈 VS 施法者 | 流亡黯道2 遊戲攻略 | Path of Exile 2
 
 本影片文字補完請到以下連結:
-https://on9.games/241231-POE2_Invoker_TriStack
+https://on9.games/24/241231-POE2_Invoker_TriStack/
 
 00:00 – 前言
 01:17 – 地圖部份 - 機體介紹
