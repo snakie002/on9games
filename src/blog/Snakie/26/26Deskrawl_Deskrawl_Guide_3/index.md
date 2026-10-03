@@ -17,7 +17,7 @@ layout: "layouts/post.njk"
 
 ### 具體是什麼問題
 
-掛機玩法的核心迴圈很單純：角色自動打怪，跟在後面的僕從拉著馬車，把打到的裝備道具撿起來放到車箱上。實況主熊哥貝卡在他的介紹影片裡描述過這個流程，並特別提到車箱是有容量上限的（這是他的實況心得，並非官方說明）。
+掛機玩法的核心迴圈很單純：角色自動打怪，跟在後面的僕從拉著馬車，把打到的裝備道具撿起來放到車箱上。實況主熊哥貝卡在他的介紹影片裡描述過這個流程，並特別提到車箱是有容量上限的。
 
 當車箱滿了，遊戲會跳出「積載量滿載、不再回收戰利品」的提示，之後的掉落就不會再被收進車上。這時有兩件事要特別注意：
 
@@ -64,8 +64,12 @@ layout: "layouts/post.njk"
 
 ### 資料來源
 
+<div class="steam-widget">
+<iframe src="https://store.steampowered.com/widget/4623570/" loading="lazy" title="Steam 商店：Deskrawl: Idle ARPG（桌面破壞神：掛機ARPG）" style="display:block; width:100%; max-width:640px; height:190px; border:0;"></iframe>
+</div>
+
 - 攻略整理：[デスクロール：放置ARPG 攻略まとめ](https://www.karada-good.net/bodygood-mono/game/deskrawl-guide/)（攻略網站「からだにいいもの」的攻略文章，本文的設定步驟整理自其中關於馬車與戰利品的章節）
-- 實況心得：熊哥貝卡的[《桌面破壞神》遊戲介紹影片](https://www.youtube.com/watch?v=f0sxCb2-JqI)，車箱容量的說法出自他的實況心得
+- 實況心得：熊哥貝卡的[《桌面破壞神》遊戲介紹影片](https://www.youtube.com/watch?v=f0sxCb2-JqI)
 - 官方更新：[[Patch 1.0.0i] Various Improvements](https://steamstore-a.akamaihd.net/news/externalpost/steam_community_announcements/1845383656388246)
 - 遊戲頁面：[Steam 商店](https://store.steampowered.com/app/4623570/)
 - 延伸閱讀：[《桌面破壞神：掛機ARPG》新作情報](https://on9.games/26/261003-Deskrawl_Idle_ARPG/index.html)（ON9.GAMES）
