@@ -4,7 +4,7 @@ description: "《幻想放置遠征隊》的追隨者靠擊敗地區決鬥者取
 date: "2026-10-13"
 categories: ["guide"]
 tags: ["幻想放置遠征隊"]
-coverImage: "post_assets/thumbnail.jpg"
+coverImage: "post_assets/thumbnail-v2-20261014.jpg"
 permalink: "/2026/duelist-topic-b57b52c11af6ab6a/"
 layout: "layouts/post.njk"
 ---
