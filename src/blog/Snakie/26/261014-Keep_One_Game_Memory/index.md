@@ -2,7 +2,7 @@
 title: "如果只能留下一段遊戲記憶，你會留下哪一段？"
 description: "存檔可以載入，記憶卻不能。如果只能留下一段遊戲記憶，你會留哪一段：某個秋夜的森林、某次熬夜過關的歡呼，還是某個再也回不去的版本？"
 conversationHook: "如果只能留下一段遊戲記憶，你會留下哪一段？"
-coverImage: "post_assets/thumbnail.jpg"
+coverImage: "post_assets/thumbnail-v2-20261014.jpg"
 permalink: "/2026/keep-one-game-memory/index.html"
 date: 2026-10-14
 tags: ["如果只能留下一段遊戲記憶，你會留下哪一段？", "遊戲記憶", "玩家回憶", "遊戲雜談"]
