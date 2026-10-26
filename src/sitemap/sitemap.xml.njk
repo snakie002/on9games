@@ -4,12 +4,15 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{#- lastmod = explicit content-revision date (frontmatter lastmod/updated, set by revision workflows), else publish date.
+    Excludes 404, drafts, noindex pages and anything excluded from collections (legacy redirect stubs). -#}
 {%- for page in collections.all %}
-  {%- if page.url and page.url != "/404.html" %}
+  {%- if page.url and page.url != "/404.html" and not page.data.draft and not page.data.noindex and not page.data.redirectTo %}
   {% set absoluteUrl = page.url | htmlBaseUrl(metadata.url) %}
+  {%- set lastmodDate = page.data.lastmod or page.data.updated or page.date %}
   <url>
     <loc>{{ absoluteUrl }}</loc>
-    <lastmod>{{ page.date | htmlDateString }}</lastmod>
+    <lastmod>{{ lastmodDate | htmlDateString }}</lastmod>
   </url>
   {%- endif %}
 {%- endfor %}

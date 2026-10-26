@@ -5,7 +5,7 @@ date: "2026-10-25"
 categories: ["guide"]
 tags: ["FINAL FANTASY RESONANCE"]
 coverImage: "post_assets/thumbnail.jpg"
-permalink: "/2026/resonance-topic-ab6788fc858e5b63/"
+permalink: "/2026/final-fantasy-resonance-stagger-guide/"
 layout: "layouts/post.njk"
 ---
 

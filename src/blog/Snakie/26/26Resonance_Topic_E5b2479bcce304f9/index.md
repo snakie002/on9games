@@ -5,7 +5,7 @@ date: "2026-10-25"
 categories: ["guide"]
 tags: ["FINAL FANTASY RESONANCE"]
 coverImage: "post_assets/thumbnail.jpg"
-permalink: "/2026/resonance-topic-e5b2479bcce304f9/"
+permalink: "/2026/final-fantasy-resonance-preorder-bonus-guide/"
 layout: "layouts/post.njk"
 ---
 
