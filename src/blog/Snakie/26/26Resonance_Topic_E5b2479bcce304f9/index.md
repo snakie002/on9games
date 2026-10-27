@@ -2,6 +2,7 @@
 title: "FINAL FANTASY RESONANCE 特典領取與魔導外觀啟用指南"
 description: "《FINAL FANTASY RESONANCE》特典領取與魔導外觀啟用分三步：先確認領取資格，再到米特拉鎮旅店前的郵箱領取，最後在主選單「道具」中設為ON變更外觀。附早鳥期限提醒。"
 date: "2026-10-25"
+lastmod: "2026-10-25"
 categories: ["guide"]
 tags: ["FINAL FANTASY RESONANCE"]
 coverImage: "post_assets/thumbnail.jpg"
