@@ -12,7 +12,7 @@ eleventyExcludeFromCollections: true
   {%- set lastmodDate = page.data.lastmod or page.data.updated or page.date %}
   <url>
     <loc>{{ absoluteUrl }}</loc>
-    <lastmod>{{ lastmodDate | htmlDateString }}</lastmod>
+    <lastmod>{% if lastmodDate is string %}{{ lastmodDate | truncate(10, true, "") }}{% else %}{{ lastmodDate | htmlDateString }}{% endif %}</lastmod>
   </url>
   {%- endif %}
 {%- endfor %}
